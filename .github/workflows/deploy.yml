@@ -1,0 +1,52 @@
+name: Deploy Flutter Web to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+          cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash:'
+          cache-path: '${{ runner.tool_cache }}/flutter/:channel:-:version:-:arch:'
+
+      - name: Verify Flutter Installation
+        run: flutter --version
+
+      - name: Install Dependencies
+        run: flutter pub get
+
+      - name: Run Responsive & Unit Tests
+        run: flutter test
+
+      - name: Build Flutter Web Release
+        run: |
+          # Build Flutter Web with repo name as base-href for GitHub Pages compatibility
+          flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build/web
+          clean: true
