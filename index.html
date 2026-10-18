@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/my_portfolio/">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+  <!-- Responsive Viewport Settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Abdulla | Senior Flutter Web Architect</title>
+  <meta name="title" content="Abdulla | Senior Flutter Web Architect">
+  <meta name="description" content="Senior Flutter Web Architect specializing in high-performance WebAssembly applications, clean domain-driven architecture, and multiplatform systems.">
+  <meta name="keywords" content="Flutter, Flutter Web, WebAssembly, Dart, Software Architect, Clean Architecture, CanvasKit, Mobile Developer">
+  <meta name="author" content="Abdulla">
+  <meta name="robots" content="index, follow">
+
+  <!-- Theme Color for Web Browsers & Mobile OS UI -->
+  <meta name="theme-color" content="#0b0f17">
+  <meta name="msapplication-navbutton-color" content="#0b0f17">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://portfolio.dev/">
+  <meta property="og:title" content="Abdulla | Senior Flutter Web Architect">
+  <meta property="og:description" content="Senior Flutter Web Architect specializing in high-performance WebAssembly applications, clean domain-driven architecture, and multiplatform systems.">
+  <meta property="og:image" content="icons/Icon-512.png">
+  <meta property="og:site_name" content="Abdulla Portfolio">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://portfolio.dev/">
+  <meta name="twitter:title" content="Abdulla | Senior Flutter Web Architect">
+  <meta name="twitter:description" content="Senior Flutter Web Architect specializing in high-performance WebAssembly applications, clean domain-driven architecture, and multiplatform systems.">
+  <meta name="twitter:image" content="icons/Icon-512.png">
+
+  <!-- iOS & PWA Icons & Settings -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Abdulla Portfolio">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Fonts Preconnect for Performance Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    /* CSS Reset & Preloader Styling (#0b0f17) */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0b0f17;
+      color: #f9fafb;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #app-preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 999999;
+      background-color: #0b0f17;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #app-preloader.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Ambient Glow Behind Preloader */
+    .glow-backdrop {
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 242, 254, 0.12) 0%, rgba(157, 78, 221, 0.05) 50%, transparent 70%);
+      filter: blur(40px);
+      pointer-events: none;
+      animation: pulseGlow 3s ease-in-out infinite alternate;
+    }
+
+    /* Logo Badge with Dual Ring Spinner */
+    .preloader-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .spinner-wrapper {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .spinner-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #00f2fe;
+      border-right-color: rgba(0, 242, 254, 0.3);
+      animation: spin 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    }
+
+    .spinner-ring-outer {
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      border-bottom-color: #9d4edd;
+      border-left-color: rgba(157, 78, 221, 0.2);
+      animation: spinReverse 2s linear infinite;
+    }
+
+    .logo-badge {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #111827, #1f2937);
+      border: 1px solid #1e2d44;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      color: #00f2fe;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Animated Loading Bar */
+    .progress-track {
+      width: 220px;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 9999px;
+      margin-top: 32px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-bar {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #00f2fe, #4facfe, #9d4edd);
+      border-radius: 9999px;
+      transform: translateX(-100%);
+      animation: progressIndeterminate 1.8s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+    }
+
+    /* Status Label */
+    .loading-status {
+      margin-top: 16px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      color: #9ca3af;
+      animation: breathe 2s ease-in-out infinite;
+    }
+
+    /* Keyframe Animations */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes spinReverse {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes progressIndeterminate {
+      0% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes pulseGlow {
+      0% { transform: scale(0.9); opacity: 0.6; }
+      100% { transform: scale(1.15); opacity: 1; }
+    }
+
+    @keyframes breathe {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Lightweight Modern Dark Preloader (#0b0f17) -->
+  <div id="app-preloader">
+    <div class="glow-backdrop"></div>
+    <div class="preloader-card">
+      <div class="spinner-wrapper">
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring-outer"></div>
+        <div class="logo-badge">A</div>
+      </div>
+      <div class="progress-track">
+        <div class="progress-bar"></div>
+      </div>
+      <span class="loading-status">Initializing Flutter Web Engine...</span>
+    </div>
+  </div>
+
+  <!-- Modern Flutter Web Entrypoint Initialization -->
+  <script src="flutter.js" defer></script>
+  <script>
+    window.addEventListener('load', function() {
+      var preloader = document.getElementById('app-preloader');
+
+      function hidePreloader() {
+        if (preloader) {
+          preloader.classList.add('fade-out');
+          setTimeout(function() {
+            if (preloader.parentNode) {
+              preloader.parentNode.removeChild(preloader);
+            }
+          }, 450);
+        }
+      }
+
+      // Configure modern Flutter Web entrypoint initialization via _flutter.loader.load
+      _flutter.loader.load({
+        serviceWorkerSettings: {
+          serviceWorkerVersion: "1672129913" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */,
+        },
+        onEntrypointLoaded: async function(engineInitializer) {
+          const appRunner = await engineInitializer.initializeEngine();
+          hidePreloader();
+          await appRunner.runApp();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
