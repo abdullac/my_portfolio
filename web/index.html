@@ -232,14 +232,14 @@
     </div>
   </div>
 
-  <!-- Modern Flutter Web Entrypoint Initialization -->
-  <script src="flutter.js" defer></script>
+  <!-- Modern Flutter Web Bootstrap -->
+  <script src="flutter_bootstrap.js" async></script>
   <script>
-    window.addEventListener('load', function() {
+    (function() {
       var preloader = document.getElementById('app-preloader');
 
       function hidePreloader() {
-        if (preloader) {
+        if (preloader && !preloader.classList.contains('fade-out')) {
           preloader.classList.add('fade-out');
           setTimeout(function() {
             if (preloader.parentNode) {
@@ -249,18 +249,18 @@
         }
       }
 
-      // Configure modern Flutter Web entrypoint initialization via _flutter.loader.load
-      _flutter.loader.load({
-        serviceWorkerSettings: {
-          serviceWorkerVersion: {{flutter_service_worker_version}},
-        },
-        onEntrypointLoaded: async function(engineInitializer) {
-          const appRunner = await engineInitializer.initializeEngine();
+      // Detect when Flutter renders flutter-view or flt-glass-pane to the DOM
+      var observer = new MutationObserver(function(mutations, obs) {
+        if (document.querySelector('flutter-view, flt-glass-pane')) {
           hidePreloader();
-          await appRunner.runApp();
+          obs.disconnect();
         }
       });
-    });
+      observer.observe(document.body, { childList: true, subtree: true });
+
+      // Safety fallback to guarantee preloader is never permanently stuck
+      setTimeout(hidePreloader, 4500);
+    })();
   </script>
 </body>
 </html>
