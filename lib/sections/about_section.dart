@@ -19,17 +19,17 @@ class AboutSection extends StatelessWidget {
     return SectionContainer(
       sectionKey: sectionKey,
       sectionNumber: '01. //',
-      title: 'About Me & Engineering Philosophy',
+      title: 'About Me & Work Ethics',
       subtitle:
-          'Transforming complex requirements into fluid, resilient, and accessible cross-platform software.',
+          'Passionate Flutter developer building responsive, multi-platform applications with dedication.',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // 1. Introduction Card (Background, Linux workflows & UI engineering)
-          _buildIntroductionCard(context, isMobile: isMobile),
+          // 1. Introduction Card with Real Photo & Authentic Story
+          _buildIntroductionCard(context, isMobile: isMobile, isDesktop: isDesktop),
           const SizedBox(height: 36),
 
-          // 2. Section Sub-heading for Core Principles
+          // 2. Section Sub-heading for Work Ethics
           Row(
             children: [
               Container(
@@ -43,7 +43,7 @@ class AboutSection extends StatelessWidget {
               const SizedBox(width: 10),
               Flexible(
                 child: Text(
-                  'Core Engineering Principles',
+                  'My Work Ethics',
                   style: AppTypography.h4.copyWith(
                     fontWeight: FontWeight.w700,
                     fontSize: isMobile ? 18 : 20,
@@ -54,15 +54,19 @@ class AboutSection extends StatelessWidget {
           ),
           const SizedBox(height: 20),
 
-          // 3. Responsive Value Cards Grid
-          _buildPrinciplesGrid(context, isDesktop: isDesktop, isMobile: isMobile),
+          // 3. Responsive Work Ethics Cards Grid
+          _buildWorkEthicsGrid(context, isDesktop: isDesktop, isMobile: isMobile),
         ],
       ),
     );
   }
 
-  /// Introduction card detailing cross-platform development, Linux, and UI engineering
-  Widget _buildIntroductionCard(BuildContext context, {required bool isMobile}) {
+  /// Introduction card with Abdulla's real photo and authentic bio
+  Widget _buildIntroductionCard(
+    BuildContext context, {
+    required bool isMobile,
+    required bool isDesktop,
+  }) {
     return Container(
       width: double.infinity,
       padding: EdgeInsets.all(isMobile ? 22 : 32),
@@ -78,115 +82,182 @@ class AboutSection extends StatelessWidget {
           ),
         ],
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: AppColors.surfaceElevated,
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: AppColors.cardBorder),
-                ),
-                child: const Icon(
-                  Icons.terminal_rounded,
-                  color: AppColors.primary,
-                  size: 22,
-                ),
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Cross-Platform & UI Engineer',
-                      style: AppTypography.subtitle.copyWith(
-                        fontWeight: FontWeight.w700,
-                        color: AppColors.textPrimary,
-                      ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      'Focused on architecture, performance, and developer experience',
-                      style: AppTypography.bodySmall,
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 20),
-          Text(
-            'With a strong background in cross-platform development, I architect and build enterprise-ready applications using Flutter across Web, Mobile, and Desktop platforms from a unified codebase.',
-            style: AppTypography.bodyLarge.copyWith(
-              height: 1.65,
-              fontSize: isMobile ? 14 : 16,
+      child: isDesktop
+          ? Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildProfilePhoto(),
+                const SizedBox(width: 32),
+                Expanded(child: _buildIntroDetails(isMobile: false)),
+              ],
+            )
+          : Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Center(child: _buildProfilePhoto(isMobile: true)),
+                const SizedBox(height: 24),
+                _buildIntroDetails(isMobile: isMobile),
+              ],
             ),
-          ),
-          const SizedBox(height: 14),
-          Text(
-            'A passionate advocate of Linux workflows and terminal-driven developer environments, I emphasize deterministic tooling, modular monorepos, automated CI/CD pipelines, and pixel-perfect design system execution.',
-            style: AppTypography.bodyLarge.copyWith(
-              height: 1.65,
-              fontSize: isMobile ? 14 : 16,
-            ),
-          ),
-          const SizedBox(height: 24),
+    );
+  }
 
-          // Technical Workflow Chips
-          Wrap(
-            spacing: 10,
-            runSpacing: 10,
-            children: const [
-              _WorkflowChip(label: 'Linux & Bash Workflows', icon: Icons.laptop_chromebook_rounded),
-              _WorkflowChip(label: 'Dart & Flutter Ecosystem', icon: Icons.flutter_dash),
-              _WorkflowChip(label: 'Design Systems & UX', icon: Icons.palette_outlined),
-              _WorkflowChip(label: 'Automated CI/CD', icon: Icons.alt_route_rounded),
-            ],
+  Widget _buildProfilePhoto({bool isMobile = false}) {
+    return Container(
+      width: isMobile ? 140 : 180,
+      height: isMobile ? 180 : 230,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppColors.cardBorder, width: 1.5),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.primary.withAlpha(30),
+            blurRadius: 20,
+            offset: const Offset(0, 8),
           ),
         ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(16),
+        child: Image.asset(
+          'assets/images/MyphotoBig.webp',
+          fit: BoxFit.cover,
+          errorBuilder: (context, error, stackTrace) => Container(
+            color: AppColors.surfaceElevated,
+            child: const Center(
+              child: Icon(Icons.person_rounded, size: 48, color: AppColors.primary),
+            ),
+          ),
+        ),
       ),
     );
   }
 
-  /// Responsive Value Cards Grid: Multi-column on desktop, single column on mobile
-  Widget _buildPrinciplesGrid(
+  Widget _buildIntroDetails({required bool isMobile}) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: AppColors.surfaceElevated,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: AppColors.cardBorder),
+              ),
+              child: const Icon(
+                Icons.flutter_dash,
+                color: AppColors.primary,
+                size: 20,
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Abdulla — Flutter Developer',
+                    style: AppTypography.subtitle.copyWith(
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.textPrimary,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    'Malappuram, Kerala',
+                    style: AppTypography.bodySmall.copyWith(
+                      color: AppColors.textMuted,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 18),
+        Text(
+          'One day, I was using an application on a computer and realized that this is the result of people working to create solutions. I was inspired to build software that runs seamlessly on computers and devices.',
+          style: AppTypography.bodyLarge.copyWith(
+            height: 1.65,
+            fontSize: isMobile ? 14 : 16,
+          ),
+        ),
+        const SizedBox(height: 12),
+        Text(
+          'Today, I develop cross-platform applications for Web, Android, Linux, Windows, iOS, and macOS using Flutter and Dart. I have built multiple responsive applications tailored for Mobile, Tablet, and Desktop screens, continually learning new technologies to build practical, user-centric software.',
+          style: AppTypography.bodyLarge.copyWith(
+            height: 1.65,
+            fontSize: isMobile ? 14 : 16,
+          ),
+        ),
+        const SizedBox(height: 22),
+
+        // Technical Workflow Chips
+        Wrap(
+          spacing: 10,
+          runSpacing: 10,
+          children: const [
+            _WorkflowChip(label: 'Web & Mobile', icon: Icons.devices_rounded),
+            _WorkflowChip(label: 'Android, Linux, Windows, iOS, Mac', icon: Icons.laptop_chromebook_rounded),
+            _WorkflowChip(label: 'Flutter & Dart Ecosystem', icon: Icons.flutter_dash),
+            _WorkflowChip(label: 'BLoC & Freezed', icon: Icons.layers_outlined),
+          ],
+        ),
+      ],
+    );
+  }
+
+  /// Responsive Work Ethics Grid: 3 columns on desktop, 2 on tablet, 1 on mobile
+  Widget _buildWorkEthicsGrid(
     BuildContext context, {
     required bool isDesktop,
     required bool isMobile,
   }) {
-    final principles = const [
+    final ethics = const [
       (
-        icon: Icons.layers_rounded,
-        title: 'Clean Architecture',
-        tag: 'Maintainability',
-        description:
-            'Strict separation across presentation, domain, and data layers to ensure codebases remain thoroughly testable, modular, and resilient to third-party framework churn.',
+        icon: Icons.verified_rounded,
+        title: 'Aim for Perfection',
+        tag: 'Quality',
+        description: 'Aim to make every work complete with perfection and clean execution.',
       ),
       (
-        icon: Icons.account_tree_rounded,
-        title: 'State Management & Scalability',
-        tag: 'Scalability',
-        description:
-            'Predictable, reactive unidirectional data flows utilizing BLoC and Riverpod. Engineered to handle high-frequency streams, deep caching, and multi-tier user sessions.',
+        icon: Icons.timelapse_rounded,
+        title: 'High Responsibility',
+        tag: 'Commitment',
+        description: 'Working longer hours with high responsibility and attention to detail.',
       ),
       (
-        icon: Icons.speed_rounded,
-        title: 'Performance & Responsive UI',
-        tag: 'Performance',
-        description:
-            'Zero-jank 60fps rendering, tight frame budgets, WebAssembly compilation on the web, and responsive layouts that gracefully scale from compact mobile screens to ultra-wide displays.',
+        icon: Icons.sentiment_satisfied_alt_rounded,
+        title: 'Friendly Attitude',
+        tag: 'Teamwork',
+        description: 'Friendly, humble, and positive attitude towards everyone and team members.',
+      ),
+      (
+        icon: Icons.lightbulb_rounded,
+        title: 'Positive Mindset',
+        tag: 'Mindset',
+        description: 'Tackling complex development tasks and problems with a positive attitude.',
+      ),
+      (
+        icon: Icons.shield_rounded,
+        title: 'Resilient Under Pressure',
+        tag: 'Resilience',
+        description: 'Ready to work calmly under pressure and meet project milestones.',
+      ),
+      (
+        icon: Icons.auto_stories_rounded,
+        title: 'Continuous Learning',
+        tag: 'Growth',
+        description: 'Always learning new things, technologies, and incorporating them into projects.',
       ),
     ];
 
-    if (!isDesktop) {
+    if (isMobile) {
       return Column(
         children: [
-          for (final item in principles) ...[
+          for (final item in ethics) ...[
             _ValueCard(
               icon: item.icon,
               title: item.title,
@@ -199,21 +270,30 @@ class AboutSection extends StatelessWidget {
       );
     }
 
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        for (int i = 0; i < principles.length; i++) ...[
-          Expanded(
-            child: _ValueCard(
-              icon: principles[i].icon,
-              title: principles[i].title,
-              tag: principles[i].tag,
-              description: principles[i].description,
-            ),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final crossAxisCount = isDesktop ? 3 : 2;
+        return GridView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: crossAxisCount,
+            crossAxisSpacing: 16,
+            mainAxisSpacing: 16,
+            mainAxisExtent: 230,
           ),
-          if (i < principles.length - 1) const SizedBox(width: 16),
-        ],
-      ],
+          itemCount: ethics.length,
+          itemBuilder: (context, index) {
+            final item = ethics[index];
+            return _ValueCard(
+              icon: item.icon,
+              title: item.title,
+              tag: item.tag,
+              description: item.description,
+            );
+          },
+        );
+      },
     );
   }
 }
@@ -249,7 +329,7 @@ class _ValueCardState extends State<_ValueCard> {
         transform: _isHovered
             ? Matrix4.translationValues(0.0, -4.0, 0.0)
             : Matrix4.identity(),
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(22),
         decoration: BoxDecoration(
           color: AppColors.card,
           borderRadius: BorderRadius.circular(16),
@@ -321,21 +401,25 @@ class _ValueCardState extends State<_ValueCard> {
                 ),
               ],
             ),
-            const SizedBox(height: 18),
+            const SizedBox(height: 16),
             Text(
               widget.title,
               style: AppTypography.subtitleSmall.copyWith(
                 fontWeight: FontWeight.w700,
                 color: _isHovered ? AppColors.primary : AppColors.textPrimary,
               ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 8),
             Text(
               widget.description,
               style: AppTypography.bodyMedium.copyWith(
-                height: 1.55,
+                height: 1.5,
                 color: AppColors.textSecondary,
               ),
+              maxLines: 4,
+              overflow: TextOverflow.ellipsis,
             ),
           ],
         ),

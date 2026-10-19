@@ -74,7 +74,7 @@ class HeroSection extends StatelessWidget {
         ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 600),
           child: Text(
-            'Specialized in building scalable, responsive, and clean-architecture mobile and web applications with fluid 60fps performance and domain-driven design.',
+            AppConstants.developerTagline,
             style: isMobile
                 ? AppTypography.bodyLarge.copyWith(fontSize: 15)
                 : AppTypography.subtitle,
@@ -110,7 +110,7 @@ class HeroSection extends StatelessWidget {
     );
   }
 
-  /// Status Badge: "🟢 Available for projects / Cross-Platform Engineering"
+  /// Status Badge: "🟢 Available for projects / Flutter Developer"
   Widget _buildStatusBadge() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
@@ -149,7 +149,7 @@ class HeroSection extends StatelessWidget {
           const SizedBox(width: 10),
           Flexible(
             child: Text(
-              'Available for projects / Cross-Platform Engineering',
+              'Available for projects / Flutter Developer',
               style: AppTypography.bodySmall.copyWith(
                 color: AppColors.textPrimary,
                 fontWeight: FontWeight.w600,
@@ -162,7 +162,7 @@ class HeroSection extends StatelessWidget {
     );
   }
 
-  /// Punchy Main Headline: "Abdulla — Flutter & Cross-Platform Developer"
+  /// Punchy Main Headline: "Abdulla — Flutter Developer"
   Widget _buildHeadline(BuildContext context, {required bool isMobile}) {
     return Text.rich(
       TextSpan(
@@ -180,7 +180,7 @@ class HeroSection extends StatelessWidget {
               shaderCallback: (bounds) =>
                   AppColors.heroTextGradient.createShader(bounds),
               child: Text(
-                'Flutter & Cross-Platform Developer',
+                'Flutter Developer',
                 style: (isMobile ? AppTypography.h3 : AppTypography.h1).copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.w800,
@@ -299,11 +299,11 @@ class HeroSection extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _buildCodeLine('class', ' DeveloperProfile {', isKeyword: true),
+                _buildCodeLine('class', ' FlutterDeveloper {', isKeyword: true),
                 _buildCodeLine('  final', ' name = \'Abdulla\';', isKeyword: true),
-                _buildCodeLine('  final', ' focus = [\'Flutter\', \'Cross-Platform\'];', isKeyword: true),
-                _buildCodeLine('  final', ' pattern = \'Clean Architecture\';', isKeyword: true),
-                _buildCodeLine('  final', ' target = \'60 FPS Web & Mobile\';', isKeyword: true),
+                _buildCodeLine('  final', ' role = \'Flutter Developer\';', isKeyword: true),
+                _buildCodeLine('  final', ' apps = [\'Web\', \'Android\', \'iOS\', \'Desktop\'];', isKeyword: true),
+                _buildCodeLine('  final', ' skills = [\'Flutter\', \'BLoC\', \'Freezed\', \'Dio\'];', isKeyword: true),
                 _buildCodeLine('}', '', isKeyword: true),
               ],
             ),
@@ -315,9 +315,9 @@ class HeroSection extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: const [
-              _FeatureBadge(label: 'Clean Arch', icon: Icons.layers_outlined),
-              _FeatureBadge(label: 'Wasm Ready', icon: Icons.speed_rounded),
-              _FeatureBadge(label: 'Responsive', icon: Icons.devices_rounded),
+              _FeatureBadge(label: 'Flutter & Dart', icon: Icons.flutter_dash),
+              _FeatureBadge(label: 'BLoC & Freezed', icon: Icons.layers_outlined),
+              _FeatureBadge(label: 'Responsive UI', icon: Icons.devices_rounded),
             ],
           ),
         ],

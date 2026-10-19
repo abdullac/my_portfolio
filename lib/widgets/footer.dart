@@ -74,7 +74,7 @@ class Footer extends StatelessWidget {
 
               // Clean Copyright Line
               Text(
-                '© ${DateTime.now().year} ${AppConstants.developerName}. All rights reserved.',
+                'Created by ${AppConstants.developerName} • All rights reserved',
                 style: AppTypography.bodySmall.copyWith(
                   color: AppColors.textMuted,
                   fontSize: 12,

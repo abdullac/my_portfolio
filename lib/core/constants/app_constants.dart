@@ -2,22 +2,29 @@
 class AppConstants {
   AppConstants._();
 
-  static const String appTitle = 'Portfolio | Senior Flutter Web Architect';
+  static const String appTitle = 'Abdulla | Flutter Developer';
   static const String developerName = 'Abdulla';
-  static const String developerRole = 'Senior Flutter & Full-Stack Web Architect';
+  static const String developerRole = 'Flutter Developer';
+  static const String developerWelcome = 'Yes, Your Own';
   static const String developerTagline =
-      'Engineering mission-critical web & mobile architectures with clean code, 60fps WebAssembly performance, and fluid responsive design.';
+      'Developer for Web, Android, Linux, Windows, iOS, and macOS applications with responsive design for Mobile, Tablet, and Desktop using Flutter & Dart.';
 
-  // External Profiles
-  static const String githubUrl = 'https://github.com';
-  static const String linkedinUrl = 'https://linkedin.com';
-  static const String twitterUrl = 'https://x.com';
-  static const String contactEmail = 'contact@portfolio.dev';
+  // External Profiles & Contact (from abdullac.github.io/#/)
+  static const String githubUrl = 'https://github.com/abdullac';
+  static const String linkedinUrl = 'https://www.linkedin.com/in/abdulla-c-31a89b252';
+  static const String twitterUrl = 'https://github.com/abdullac';
+  static const String contactEmail = 'abdullacforu@gmail.com';
+  static const String location = 'Malappuram, Kerala';
+
+  // Assets
+  static const String photoBig = 'assets/images/MyphotoBig.webp';
+  static const String photoFace = 'assets/images/myPhotoBigFace.webp';
 
   // Navigation Links
   static const String navAbout = 'About';
   static const String navSkills = 'Skills';
   static const String navProjects = 'Projects';
+  static const String navWorkEthics = 'Work Ethics';
   static const String navContact = 'Contact';
 
   static const List<String> navItems = [

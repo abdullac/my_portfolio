@@ -236,16 +236,16 @@ class _ContactSectionState extends State<ContactSection> {
   Widget _buildQuickLinksRow(BuildContext context, {required bool isMobile}) {
     final links = [
       (
-        label: 'LinkedIn Profile',
-        sublabel: 'Connect & Network',
-        faIcon: FontAwesomeIcons.linkedin,
-        url: AppConstants.linkedinUrl,
-      ),
-      (
-        label: 'GitHub Repositories',
-        sublabel: 'Explore Source Code',
+        label: 'GitHub Profile',
+        sublabel: 'github.com/abdullac',
         faIcon: FontAwesomeIcons.github,
         url: AppConstants.githubUrl,
+      ),
+      (
+        label: 'Location',
+        sublabel: AppConstants.location,
+        faIcon: FontAwesomeIcons.locationDot,
+        url: 'https://maps.google.com/?q=Malappuram,Kerala',
       ),
     ];
 

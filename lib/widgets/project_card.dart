@@ -234,68 +234,36 @@ class _ProjectCardState extends State<ProjectCard> {
           child: Stack(
             fit: StackFit.expand,
             children: [
-              // Subtle Grid Background Pattern
-              CustomPaint(
-                painter: _GridPatternPainter(),
-              ),
+              if (widget.project.imagePath != null)
+                AnimatedScale(
+                  scale: _isHovered ? 1.05 : 1.0,
+                  duration: const Duration(milliseconds: 300),
+                  curve: Curves.easeOutCubic,
+                  child: Image.asset(
+                    widget.project.imagePath!,
+                    fit: BoxFit.cover,
+                    alignment: Alignment.topCenter,
+                    errorBuilder: (context, error, stackTrace) =>
+                        _buildMockupPreview(),
+                  ),
+                )
+              else
+                _buildMockupPreview(),
 
-              // Ambient Center Glow
-              Center(
-                child: Container(
-                  width: 140,
-                  height: 140,
+              // Ambient Gradient Overlay for text contrast
+              if (widget.project.imagePath != null)
+                Container(
                   decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: RadialGradient(
+                    gradient: LinearGradient(
                       colors: [
-                        AppColors.primary.withAlpha(_isHovered ? 40 : 20),
                         Colors.transparent,
+                        AppColors.card.withAlpha(_isHovered ? 160 : 100),
                       ],
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
                     ),
                   ),
                 ),
-              ),
-
-              // Mockup Center Display
-              Center(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(14),
-                      decoration: BoxDecoration(
-                        color: AppColors.surface,
-                        borderRadius: BorderRadius.circular(16),
-                        border: Border.all(
-                          color: _isHovered
-                              ? AppColors.primary.withAlpha(120)
-                              : AppColors.cardBorder,
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withAlpha(50),
-                            blurRadius: 16,
-                          ),
-                        ],
-                      ),
-                      child: Icon(
-                        Icons.devices_rounded,
-                        size: 32,
-                        color: _isHovered ? AppColors.primary : AppColors.textPrimary,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    Text(
-                      widget.project.title,
-                      style: AppTypography.code.copyWith(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.textSecondary,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
 
               // Status Chip in Preview Corner
               Positioned(
@@ -321,7 +289,7 @@ class _ProjectCardState extends State<ProjectCard> {
                       ),
                       const SizedBox(width: 6),
                       Text(
-                        'Interactive Demo',
+                        'Live App',
                         style: AppTypography.bodySmall.copyWith(
                           fontSize: 10,
                           fontWeight: FontWeight.w600,
@@ -336,6 +304,56 @@ class _ProjectCardState extends State<ProjectCard> {
           ),
         ),
       ),
+    );
+  }
+
+  Widget _buildMockupPreview() {
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        CustomPaint(
+          painter: _GridPatternPainter(),
+        ),
+        Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: AppColors.surface,
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: _isHovered
+                        ? AppColors.primary.withAlpha(120)
+                        : AppColors.cardBorder,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withAlpha(50),
+                      blurRadius: 16,
+                    ),
+                  ],
+                ),
+                child: Icon(
+                  Icons.devices_rounded,
+                  size: 32,
+                  color: _isHovered ? AppColors.primary : AppColors.textPrimary,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                widget.project.title,
+                style: AppTypography.code.copyWith(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.textSecondary,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

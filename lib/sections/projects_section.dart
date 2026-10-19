@@ -18,9 +18,9 @@ class ProjectsSection extends StatelessWidget {
     return SectionContainer(
       sectionKey: sectionKey,
       sectionNumber: '03. //',
-      title: 'Featured Projects & Architecture',
+      title: 'Featured Projects & My Works',
       subtitle:
-          'Mission-critical applications engineered with Flutter, clean architecture, and modern state orchestration.',
+          'Real-world applications built and deployed with Flutter across Web and Mobile platforms.',
       child: isDesktop
           ? GridView.builder(
               shrinkWrap: true,

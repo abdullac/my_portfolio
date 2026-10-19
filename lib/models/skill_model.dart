@@ -35,45 +35,50 @@ class SkillCategoryGroup {
     required this.skills,
   });
 
-  /// Structured skills dataset meeting the portfolio specifications.
+  /// Structured skills dataset matching Abdulla's actual technical capabilities.
   static const List<SkillCategoryGroup> groups = [
     SkillCategoryGroup(
       category: SkillCategory.frontend,
-      description: 'Cross-platform UI engineering and design system implementation.',
+      description: 'Cross-platform UI development for Web, Android, iOS, and Desktop.',
       skills: [
         SkillItem(name: 'Flutter', badge: 'Core'),
         SkillItem(name: 'Dart', badge: 'Core'),
-        SkillItem(name: 'Responsive Web'),
-        SkillItem(name: 'Material & Cupertino'),
+        SkillItem(name: 'Responsive UI'),
+        SkillItem(name: 'HTML5'),
+        SkillItem(name: 'CSS3'),
+        SkillItem(name: 'JavaScript'),
+        SkillItem(name: 'Bootstrap'),
+        SkillItem(name: 'jQuery'),
       ],
     ),
     SkillCategoryGroup(
       category: SkillCategory.architecture,
-      description: 'Predictable unidirectional data flows and domain decoupling.',
+      description: 'State management, code generation, and reactive architecture.',
       skills: [
-        SkillItem(name: 'Clean Architecture', badge: 'Pattern'),
-        SkillItem(name: 'Riverpod'),
-        SkillItem(name: 'BLoC'),
-        SkillItem(name: 'Provider'),
+        SkillItem(name: 'BLoC', badge: 'State'),
+        SkillItem(name: 'Freezed', badge: 'Immutable'),
+        SkillItem(name: 'Injectable', badge: 'DI'),
+        SkillItem(name: 'Clean Code'),
       ],
     ),
     SkillCategoryGroup(
       category: SkillCategory.backend,
-      description: 'Asynchronous network communication and local persistent storage.',
+      description: 'API communication, network requests, and data serialization.',
       skills: [
-        SkillItem(name: 'Firebase'),
+        SkillItem(name: 'Dio', badge: 'Networking'),
+        SkillItem(name: 'JSON Serialization'),
         SkillItem(name: 'REST APIs'),
-        SkillItem(name: 'Hive', badge: 'NoSQL'),
-        SkillItem(name: 'SQLite', badge: 'SQL'),
+        SkillItem(name: 'HTTP Client'),
       ],
     ),
     SkillCategoryGroup(
       category: SkillCategory.tools,
-      description: 'Developer-first workflows, version control, and automation.',
+      description: 'Version control, programming environments, and operating systems.',
       skills: [
-        SkillItem(name: 'Git/GitHub'),
-        SkillItem(name: 'Linux OS', badge: 'Daily Driver'),
-        SkillItem(name: 'CI/CD basics'),
+        SkillItem(name: 'Git & GitHub'),
+        SkillItem(name: 'Java'),
+        SkillItem(name: 'Linux OS'),
+        SkillItem(name: 'Cross-Platform Build'),
       ],
     ),
   ];
