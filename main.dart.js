@@ -1567,11 +1567,11 @@ arm(a){var s=!1
 if($.b0().gci()===B.aD||$.b0().gci()===B.bu)if(a!=null)s=a===".SF Pro Text"||a===".SF Pro Display"||a===".SF UI Text"||a===".SF UI Display"
 return s},
 axF(){if(A.ayX())return B.oe
-if($.b0().gci()===B.aD||$.b0().gci()===B.bu)return B.Hd
+if($.b0().gci()===B.aD||$.b0().gci()===B.bu)return B.He
 throw A.i(A.aA("Should only be called on Mac or iOS."))},
 aKO(){if(A.ayX())return B.oe
 if($.b0().gci()===B.aD||$.b0().gci()===B.bu)return A.axF()
-return B.Ha},
+return B.Hb},
 ayx(a,b){var s,r,q,p,o=new A.cm("")
 A.ay9(a,o)
 if(!A.arn(a)&&!A.arm(a)){s=b==null
@@ -10991,7 +10991,7 @@ break
 case 4:s=l.a
 s===$&&A.a()
 s=A.be(s,200)
-r=A.be(A.Zf(l,B.oh,B.Hf),24)
+r=A.be(A.Zf(l,B.oh,B.Hg),24)
 q=A.be(A.Zf(l,B.oh,B.HY),32)
 p=A.be(l.a,10)
 o=A.be(l.a,12)
@@ -20486,7 +20486,7 @@ if(a.as!==q)return q?-1:1
 return 0},
 aDU(a,b){var s=A.a1(b).h("a5<1,dd>")
 s=A.Z(new A.a5(b,new A.a_7(),s),s.h("ap.E"))
-return A.aDg(!0,s,a,B.Ie,!0,B.DO,null)},
+return A.aDg(!0,s,a,B.Id,!0,B.DO,null)},
 apu(a){var s
 try{a.di()}catch(s){a.Ls()}a.w=B.ZX
 try{a.b3(A.aM0())}catch(s){}},
@@ -21090,7 +21090,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 apS(a,b){var s
-if(a.i(0,b))return new A.GI(B.Ij)
+if(a.i(0,b))return new A.GI(B.Ii)
 s=A.b([],t.fJ)
 A.bQ()
 a.nC(new A.a22(b,A.ay(t.u),s))
@@ -26536,7 +26536,7 @@ tK(){var s=this.as
 s===$&&A.a()
 return s},
 tL(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.If
+if(a<0||b<0)return B.Ie
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -26800,7 +26800,7 @@ i(a,b){if(b==null)return!1
 if(!(b instanceof A.x3))return!1
 return b.d===this.d&&b.b==this.b&&A.f3(b.c,this.c)},
 gv(a){var s=this,r=s.c
-return A.K(s.d,s.a,s.b,A.ba(r==null?B.Ii:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.K(s.d,s.a,s.b,A.ba(r==null?B.Ih:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 $ifN:1}
 A.vX.prototype={
 QO(a,b){var s=this.L_(a),r=A.aJ(new A.Xr(this,b,s))
@@ -27341,7 +27341,7 @@ p.toString
 p=p>0}else p=!1
 if(p)return q}o=this.a4n(a,b)
 if(o.length===1)return B.b.gW(o)
-for(r=0;r<7;++r){q=A.atR(o,new A.a_X(B.Hk[r]))
+for(r=0;r<7;++r){q=A.atR(o,new A.a_X(B.Hl[r]))
 if(q!=null)return q}return B.b.gW(o)},
 a52(a){var s,r,q
 if(B.ho.ap(a)){s=B.ho.j(0,a)
@@ -29017,7 +29017,7 @@ if(e.b){q=t.f
 d=q.a(q.a(B.bK.eO(a2)).j(0,"data"))
 c=A.cy(d.j(0,"message"))
 if(c!=null&&c.length!==0){b=A.apX(d,"assertiveness")
-e.a.R1(c,B.Hb[b==null?0:b])}}a.ef(a3,B.bK.bu(!0))
+e.a.R1(c,B.Hc[b==null?0:b])}}a.ef(a3,B.bK.bu(!0))
 return
 case"flutter/navigation":q=a.gcc().b
 p=t.e8
@@ -33612,7 +33612,7 @@ o=A.e3(s.j(0,"textAlignIndex"))
 n=A.e3(s.j(0,"textDirectionIndex"))
 m=A.fv(s.j(0,"fontWeightIndex"))
 l=m!=null?A.ayM(m):"normal"
-p=new A.acs(new A.a_3(A.a2j(s,"fontSize"),l,A.cy(s.j(0,"fontFamily")),B.H7[o],B.kd[n],A.a2j(s,"letterSpacing"),A.a2j(s,"wordSpacing"),A.a2j(s,"lineHeight")))
+p=new A.acs(new A.a_3(A.a2j(s,"fontSize"),l,A.cy(s.j(0,"fontFamily")),B.H8[o],B.kd[n],A.a2j(s,"letterSpacing"),A.a2j(s,"wordSpacing"),A.a2j(s,"lineHeight")))
 break
 case"TextInput.clearClient":p=B.BZ
 break
@@ -38919,7 +38919,7 @@ if(o>0)return s
 return null}}
 A.aey.prototype={
 E(a,b){this.KX(b,0,b.length,!1)},
-bj(){this.KX(B.I7,0,0,!0)}}
+bj(){this.KX(B.I6,0,0,!0)}}
 A.amD.prototype={
 KX(a,b,c,d){var s=this.b.ai9(a,b,c,d)
 if(s!=null)this.a.mv(s,0,s.length,d)}}
@@ -41287,7 +41287,7 @@ h=r[4]
 g=r[5]
 f=r[6]
 e=r[7]
-for(d=l,q=0;q<64;++q,e=f,f=g,g=h,h=b,i=j,j=k,k=d,d=a){c=(e+(((h>>>6|h<<26)^(h>>>11|h<<21)^(h>>>25|h<<7))>>>0)>>>0)+(((h&g^~h&f)>>>0)+(B.Hm[q]+s[q]>>>0)>>>0)>>>0
+for(d=l,q=0;q<64;++q,e=f,f=g,g=h,h=b,i=j,j=k,k=d,d=a){c=(e+(((h>>>6|h<<26)^(h>>>11|h<<21)^(h>>>25|h<<7))>>>0)>>>0)+(((h&g^~h&f)>>>0)+(B.Hn[q]+s[q]>>>0)>>>0)>>>0
 b=i+c>>>0
 a=c+((((d>>>2|d<<30)^(d>>>13|d<<19)^(d>>>22|d<<10))>>>0)+((d&k^d&j^k&j)>>>0)>>>0)>>>0}r.$flags&2&&A.ae(r)
 r[0]=d+l>>>0
@@ -45311,7 +45311,7 @@ s.toString
 r=this.d
 if(s!==1)r=r.bh(r.gc3()*s)
 s=this.c
-return A.d8(q,A.jM(q,q,q,new A.N6(B.Hl,s,r,o/48,!1,A.aL7(),s),new A.C(o,o)),!1,q,!1,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q)}}
+return A.d8(q,A.jM(q,q,q,new A.N6(B.Hm,s,r,o/48,!1,A.aL7(),s),new A.C(o,o)),!1,q,!1,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q)}}
 A.N6.prototype={
 aA(a,b){var s,r,q,p,o,n=this
 if(n.f){a.Hf(3.141592653589793)
@@ -45325,7 +45325,7 @@ t_(a){return null},
 zE(a){return!1},
 gu_(){return null}}
 A.uu.prototype={
-lI(a,b,c,d){var s,r,q,p=A.Vu(B.Ho,d,A.q8())
+lI(a,b,c,d){var s,r,q,p=A.Vu(B.Hp,d,A.q8())
 p.toString
 $.W()
 s=A.aZ()
@@ -45411,7 +45411,7 @@ n=o.e
 o=o.cx
 r=q.ga92()
 q.a.toString
-return new A.Bu(p,p,p,new A.aif(),p,p,p,p,p,n,B.Kv,p,p,p,B.I8,q.ga99(),o,p,B.W5,s,p,r,p,p,B.og,!1,!1,p,p,p,new A.o2(q,t.bT))},
+return new A.Bu(p,p,p,new A.aif(),p,p,p,p,p,n,B.Kv,p,p,p,B.I7,q.ga99(),o,p,B.W5,s,p,r,p,p,B.og,!1,!1,p,p,p,new A.o2(q,t.bT))},
 J(a){var s,r=this.a2_(a)
 this.a.toString
 s=this.d
@@ -52470,7 +52470,7 @@ return new A.lE(r.a.cd(s.ghd()),r.b,r.c)},
 ck(a){var s=this.b
 return s.a.c.ck(a.T(0,s.ghd()))},
 oF(){var s,r,q=this.b,p=q.ghd()
-if(!isFinite(p.a)||!isFinite(p.b))return B.Ig
+if(!isFinite(p.a)||!isFinite(p.b))return B.If
 s=q.f
 if(s==null){s=q.a.c.oF()
 q.f=s}if(p.i(0,B.h))r=s
@@ -61616,7 +61616,7 @@ break
 case 1:return A.M(q,r)}})
 return A.N($async$BG,r)},
 a4E(a,b){var s,r,q,p
-if(a===b)return B.Id
+if(a===b)return B.Ic
 s=A.b([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.iv(B.ej,a)
@@ -65407,7 +65407,7 @@ q.b1()
 q.bX$.E(0,s.ga9L())
 s.e=q}return q},
 gN4(){var s=this.f
-return s===$?this.f=new A.agu(1,B.H6,B.bv):s},
+return s===$?this.f=new A.agu(1,B.H7,B.bv):s},
 geG(){var s=this.z
 s=s==null?null:$.bP().d===s
 return s===!0},
@@ -66092,7 +66092,7 @@ h.Dx()
 r=h.ga5i()
 q=q.rR
 h.e!==$&&A.aS()
-h.e=new A.Lj(f,new A.c1(B.Ki,l),new A.oj(),p,B.c_,0,k,h.ga7l(),h.ga7n(),r,B.c_,0,j,h.ga7f(),h.ga7h(),r,i,B.Ik,s,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Hg(),new A.Hg())
+h.e=new A.Lj(f,new A.c1(B.Ki,l),new A.oj(),p,B.c_,0,k,h.ga7l(),h.ga7n(),r,B.c_,0,j,h.ga7f(),h.ga7h(),r,i,B.Ij,s,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Hg(),new A.Hg())
 return h},
 uJ(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -69460,7 +69460,7 @@ if(b==null)return!1
 if(J.Q(b)!==A.o(s))return!1
 return b instanceof A.c_&&b.a===s.a&&b.b==s.b&&b.c==s.c&&b.d===s.d&&A.c8(null,null)},
 gv(a){var s=this
-return A.K(s.a,s.b,s.c,s.d,A.ba(B.Ih),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.K(s.a,s.b,s.c,s.d,A.ba(B.Ig),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.d.tl(B.j.lP(this.a,16).toUpperCase(),5,"0")+")"}}
 A.xx.prototype={
 cb(a){return!this.w.i(0,a.w)},
@@ -70500,7 +70500,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 if(a3==null)a3=a2.b.c.Q
-a=new A.ym(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.qP(a1),B.Ib,e===!0,d,c,b,a3,A.aF8(a2))
+a=new A.ym(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.qP(a1),B.Ia,e===!0,d,c,b,a3,A.aF8(a2))
 if(!a.i(0,a0.e))a0.a6(new A.aiw(a0,a))},
 wQ(){if(this.d==null)this.or()},
 EX(){this.or()},
@@ -70813,7 +70813,7 @@ r.N(0,s.VB(null,l))
 l.a.toString
 q=r.a
 p=0
-for(;!1;++p){o=B.I9[p]
+for(;!1;++p){o=B.I8[p]
 n=l.c
 n.toString
 m=new A.h6(o.EE(n),null,!0,B.lX,B.bL,new A.pZ(new ($.VR())(B.bL)),B.bL)
@@ -71156,7 +71156,7 @@ J(a){var s,r,q=this,p=null,o=q.ga6U(),n=A.lC(a),m=q.bR$,l=q.d
 l===$&&A.a()
 s=q.a.ay
 if(l.gL()==null){r=q.gJP()
-r=J.rd(r.slice(0),A.a1(r).c)}else r=B.Ia
+r=J.rd(r.slice(0),A.a1(r).c)}else r=B.I9
 return new A.o5(p,new A.d0(new A.a60(q,a),A.y7(B.bA,new A.G0(!1,A.apC(A.r1(!0,p,A.ade(m,new A.rB(r,s,l)),p,p,p,q.y,!1,p,p,p,p,p,!0),p,n),p),o,q.ga9A(),p,p,o),p,t.w3),p)}}
 A.a6_.prototype={
 $1(a){var s,r=this.a
@@ -76340,7 +76340,7 @@ r.vN()
 return s.aO()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gBJ(),p=0;p<s.length;s.length===r||(0,A.v)(s),++p)s[p].I(q)
-o.b=B.Ic
+o.b=B.Ib
 o.y=!1
 o.dU()},
 dq(a,b){return a.lq(b)},
@@ -80397,14 +80397,14 @@ a1T(){return this.K8(!1)},
 K6(a){var s,r,q=null,p=A.by(10),o=t.p
 p=A.c5(A.b([A.bq(q,B.Fv,B.p,q,q,new A.aY(B.as,q,A.cf(B.N,1),p,q,q,B.w),q,q,q,q,B.nn,q,q,q),B.dv,A.fc(A.cA(A.b([A.bx("Abdulla \u2014 Flutter Developer",q,q,A.bl().$4$color$fontSize$fontWeight$height(B.K,18,B.x,1.5).ip(B.E,B.a_),q),B.lm,A.bx("Malappuram, Kerala",q,q,A.bl().$4$color$fontSize$fontWeight$height(B.ac,12,B.n,1.4).hC(B.ac),q)],o),B.a6,B.A),1)],o),B.v,B.Z,B.A)
 s=A.bl().$4$color$fontSize$fontWeight$height(B.K,16,B.n,1.6)
-s=A.bx("One day, I was using an application on a computer and realized that this is the result of people working to create solutions. I was inspired to build software that runs seamlessly on computers and devices.",q,q,s.RS(a?14:16,1.65),q)
+s=A.bx("My journey into software engineering began with a genuine curiosity about how digital tools empower people to solve everyday challenges. Inspired by the impact of well-crafted technology, I set out to build software that performs seamlessly across devices.",q,q,s.RS(a?14:16,1.65),q)
 r=A.bl().$4$color$fontSize$fontWeight$height(B.K,16,B.n,1.6)
-return A.cA(A.b([p,B.ll,s,B.eS,A.bx("Today, I develop cross-platform applications for Web, Android, Linux, Windows, iOS, and macOS using Flutter and Dart. I have built multiple responsive applications tailored for Mobile, Tablet, and Desktop screens, continually learning new technologies to build practical, user-centric software.",q,q,r.RS(a?14:16,1.65),q),B.Sh,A.mz(B.bo,B.IJ,B.co,10,10)],o),B.a6,B.A)},
+return A.cA(A.b([p,B.ll,s,B.eS,A.bx("Today, I develop responsive cross-platform applications for Web, Android, iOS, Windows, Linux, and macOS using Flutter & Dart. I focus on clean code, intuitive user experiences, and robust state management, constantly expanding my skills to build practical, impactful software.",q,q,r.RS(a?14:16,1.65),q),B.Sh,A.mz(B.bo,B.IJ,B.co,10,10)],o),B.a6,B.A)},
 a20(a,b,c){var s,r,q,p
 if(c){s=t.p
 r=A.b([],s)
-for(q=0;q<6;++q){p=B.op[q].a
-B.b.N(r,A.b([new A.mY(p[1],p[3],p[2],p[0],null),B.i3],s))}return A.cA(r,B.v,B.A)}return A.aEP(new A.W2(b,B.op))}}
+for(q=0;q<6;++q){p=B.of[q].a
+B.b.N(r,A.b([new A.mY(p[1],p[3],p[2],p[0],null),B.i3],s))}return A.cA(r,B.v,B.A)}return A.aEP(new A.W2(b,B.of))}}
 A.W0.prototype={
 $3(a,b,c){var s=null
 return A.bq(s,B.Cn,B.p,B.as,s,s,s,s,s,s,s,s,s,s)},
@@ -80572,13 +80572,13 @@ n=A.c5(A.b([A.bq(i,i,B.p,i,i,B.Bb,i,10,i,i,i,i,i,10),B.bl,A.bq(i,i,B.p,i,i,B.Bc,
 m=A.a8(160,B.aC.n()>>>16&255,B.aC.n()>>>8&255,B.aC.n()&255)
 l=A.by(12)
 k=A.cf(B.N,1)
-o=A.c5(A.b([f,B.Se,A.fc(A.bq(i,A.cA(A.b([n,B.cm,A.bq(i,A.cA(A.b([j.nX("class"," FlutterDeveloper {",!0),j.nX(h," name = 'Abdulla';",!0),j.nX(h," role = 'Flutter Developer';",!0),j.nX(h," apps = ['Web', 'Android', 'iOS', 'Desktop'];",!0),j.nX(h," skills = ['Flutter', 'BLoC', 'Freezed', 'Dio'];",!0),j.nX("}","",!0)],o),B.a6,B.A),B.p,i,i,new A.aY(m,i,k,l,i,i,B.w),i,i,i,i,B.Ek,i,i,i),B.cm,A.mz(B.bo,B.H9,B.co,8,8)],o),B.a6,B.ai),B.p,i,i,new A.aY(B.ag,i,q,r,p,i,B.w),i,i,i,i,B.Eu,i,i,i),5)],o),B.v,B.Z,B.A)
+o=A.c5(A.b([f,B.Se,A.fc(A.bq(i,A.cA(A.b([n,B.cm,A.bq(i,A.cA(A.b([j.nX("class"," FlutterDeveloper {",!0),j.nX(h," name = 'Abdulla';",!0),j.nX(h," role = 'Flutter Developer';",!0),j.nX(h," apps = ['Web', 'Android', 'iOS', 'Desktop'];",!0),j.nX(h," skills = ['Flutter', 'BLoC', 'Freezed', 'Dio'];",!0),j.nX("}","",!0)],o),B.a6,B.A),B.p,i,i,new A.aY(m,i,k,l,i,i,B.w),i,i,i,i,B.Ek,i,i,i),B.cm,A.mz(B.bo,B.Ha,B.co,8,8)],o),B.a6,B.ai),B.p,i,i,new A.aY(B.ag,i,q,r,p,i,B.w),i,i,i,i,B.Eu,i,i,i),5)],o),B.v,B.Z,B.A)
 f=o}else f=j.K5(a,e)
 return A.bq(i,A.iv(new A.ex(B.fa,f,i),i,i),B.p,i,i,i,i,i,i,i,new A.aq(g,s,g,s),i,i,1/0)},
 K5(a,b){var s=this,r=null,q=A.by(30),p=A.cf(B.N,1),o=t.V,n=A.b([new A.bn(0,B.R,A.a8(20,B.e.n()>>>16&255,B.e.n()>>>8&255,B.e.n()&255),B.uA,12)],o),m=t.p
-n=A.bq(r,A.c5(A.b([A.bq(r,r,B.p,r,r,new A.aY(B.e,r,r,r,A.b([new A.bn(0,B.R,A.a8(180,B.e.n()>>>16&255,B.e.n()>>>8&255,B.e.n()&255),B.h,6)],o),r,B.bJ),r,8,r,r,r,r,r,8),B.li,new A.hj(1,B.cg,A.bx("Available for projects / Flutter Developer",r,r,A.bl().$4$color$fontSize$fontWeight$height(B.ac,12,B.n,1.4).EA(B.E,B.ah,0.2),r),r)],m),B.v,B.Z,B.ai),B.p,r,r,new A.aY(B.ag,r,p,q,n,r,B.w),r,r,r,r,B.fJ,r,r,r)
+n=A.bq(r,A.c5(A.b([A.bq(r,r,B.p,r,r,new A.aY(B.e,r,r,r,A.b([new A.bn(0,B.R,A.a8(180,B.e.n()>>>16&255,B.e.n()>>>8&255,B.e.n()&255),B.h,6)],o),r,B.bJ),r,8,r,r,r,r,r,8),B.li,new A.hj(1,B.cg,A.bx("Available for Projects & Opportunities",r,r,A.bl().$4$color$fontSize$fontWeight$height(B.ac,12,B.n,1.4).EA(B.E,B.ah,0.2),r),r)],m),B.v,B.Z,B.ai),B.p,r,r,new A.aY(B.ag,r,p,q,n,r,B.w),r,r,r,r,B.fJ,r,r,r)
 q=s.a1L(a,b)
-return A.cA(A.b([n,B.eT,q,B.cm,new A.ex(B.Ba,A.bx("Developer for Web, Android, Linux, Windows, iOS, and macOS applications with responsive design for Mobile, Tablet, and Desktop using Flutter & Dart.",r,r,b?A.bl().$4$color$fontSize$fontWeight$height(B.K,16,B.n,1.6).agD(15):A.bl().$4$color$fontSize$fontWeight$height(B.K,18,B.x,1.5),r),r),B.ln,A.mz(B.bo,A.b([A.Yl(48,B.nX,s.c,"View Projects",B.iP),A.Yl(48,B.Fd,s.d,"Contact Me",B.Bl)],m),B.lL,14,16),B.ln,s.a1V()],m),B.a6,B.ai)},
+return A.cA(A.b([n,B.eT,q,B.cm,new A.ex(B.Ba,A.bx("Passionate Flutter & Dart developer crafting seamless, responsive cross-platform experiences for Web, Mobile (Android & iOS), and Desktop.",r,r,b?A.bl().$4$color$fontSize$fontWeight$height(B.K,16,B.n,1.6).agD(15):A.bl().$4$color$fontSize$fontWeight$height(B.K,18,B.x,1.5),r),r),B.ln,A.mz(B.bo,A.b([A.Yl(48,B.nX,s.c,"View Projects",B.iP),A.Yl(48,B.Fd,s.d,"Contact Me",B.Bl)],m),B.lL,14,16),B.ln,s.a1V()],m),B.a6,B.ai)},
 a1L(a,b){var s=null,r=(b?A.bl().$5$color$fontSize$fontWeight$height$letterSpacing(B.E,38,B.a_,1.2,-0.8):A.bl().$5$color$fontSize$fontWeight$height$letterSpacing(B.E,52,B.bQ,1.15,-1.2)).RV(B.E,B.bQ,1.15)
 return A.ac9(A.d2(A.b([new A.kR(A.avJ(A.bx("Flutter Developer",s,s,(b?A.bl().$5$color$fontSize$fontWeight$height$letterSpacing(B.E,28,B.a_,1.25,-0.5):A.bl().$5$color$fontSize$fontWeight$height$letterSpacing(B.E,52,B.bQ,1.15,-1.2)).RV(B.m,B.bQ,1.15),s),new A.a1s()),B.kM,B.r,s)],t.VO),s,s,s,s,s,s,s,s,r,"Abdulla\n"),s,s,s,s)},
 a1V(){return A.c5(A.b([new A.pI(B.fT,"GitHub Profile",new A.a1t(),null),B.dv,new A.pI(B.nK,"LinkedIn Profile",new A.a1u(),null),B.dv,new A.pI(B.nJ,"Send Email",new A.a1v(),null)],t.p),B.v,B.Z,B.ai)},
@@ -80627,23 +80627,23 @@ $0(){return this.a.d=!1},
 $S:0}
 A.K2.prototype={
 J(a){var s,r,q
-if(A.bf(a,B.b1,t.w).w.a.a>1024)s=A.apK(B.SQ,new A.a7a(B.ol),4,B.kG,!0)
+if(A.bf(a,B.b1,t.w).w.a.a>1024)s=A.apK(B.SP,new A.a7a(B.ol),4,B.kG,!0)
 else{s=t.p
 r=A.b([],s)
 for(q=0;q<4;++q)B.b.N(r,A.b([new A.m6(B.ol[q],null),B.eT],s))
-s=A.cA(r,B.v,B.A)}return A.a9q(s,this.c,"03. //","Real-world applications built and deployed with Flutter across Web and Mobile platforms.","Featured Projects & My Works")}}
+s=A.cA(r,B.v,B.A)}return A.a9q(s,this.c,"03. //","Real-world applications built and deployed with Flutter across Web and Mobile platforms.","Featured Projects")}}
 A.a7a.prototype={
 $2(a,b){return new A.m6(this.a[b],null)},
 $S:507}
 A.LM.prototype={
 J(a){var s,r,q
-if(A.bf(a,B.b1,t.w).w.a.a>1024)s=A.apK(B.SP,new A.abg(),4,B.kG,!0)
+if(A.bf(a,B.b1,t.w).w.a.a>1024)s=A.apK(B.SQ,new A.abg(),4,B.kG,!0)
 else{s=t.p
 r=A.b([],s)
-for(q=0;q<4;++q)B.b.N(r,A.b([new A.mD(B.of[q],null),B.cm],s))
+for(q=0;q<4;++q)B.b.N(r,A.b([new A.mD(B.op[q],null),B.cm],s))
 s=A.cA(r,B.v,B.A)}return A.a9q(s,this.c,"02. //","Structured competencies across frontend frameworks, architecture patterns, backend services, and tooling.","Skills & Technical Capabilities")}}
 A.abg.prototype={
-$2(a,b){return new A.mD(B.of[b],null)},
+$2(a,b){return new A.mD(B.op[b],null)},
 $S:508}
 A.mD.prototype={
 af(){return new A.NM()}}
@@ -80764,7 +80764,7 @@ J(a){var s=null,r=A.bf(a,B.b1,t.w).w.a.a<768?20:40,q=A.by(20),p=A.cf(B.N,1),o=t.
 q=A.bq(s,new A.I4(B.Bf,A.mz(B.lK,A.b([A.c5(A.b([B.Fw,B.bl,A.bx("Crafted with Flutter Web",s,s,A.bl().$4$color$fontSize$fontWeight$height(B.ac,12,B.n,1.4).ahm(B.K,11,B.ah,0.3),s)],o),B.v,B.Z,B.ai),A.c5(A.b([A.bq(s,s,B.p,s,s,B.iM,s,5,s,s,s,s,s,5),B.lk,A.bx("Wasm Engine",s,s,A.bl().$4$color$fontSize$fontWeight$height(B.ac,12,B.n,1.4).kf(B.ac,10),s)],o),B.v,B.Z,B.ai)],o),B.lL,4,8),s),B.p,s,s,new A.aY(B.ag,s,p,q,s,s,B.w),s,s,s,s,B.Eg,s,s,s)
 p=A.b([new A.mH(B.fT,"GitHub",new A.a0w(),s),B.eR,new A.mH(B.nK,"LinkedIn",new A.a0x(),s),B.eR,new A.mH(B.nJ,"Email",new A.a0y(),s)],o)
 B.b.N(p,A.b([B.eR,new A.mH(B.EI,"Back to Top",this.c,s)],o))
-return A.bq(s,A.iv(new A.ex(B.fa,A.cA(A.b([q,B.cm,A.c5(p,B.v,B.hm,B.A),B.eT,A.bx("Created by Abdulla \u2022 All rights reserved",s,s,A.bl().$4$color$fontSize$fontWeight$height(B.ac,12,B.n,1.4).kf(B.ac,12),B.cN)],o),B.v,B.A),s),s,s),B.p,s,s,B.Be,s,s,s,s,new A.aq(r,36,r,36),s,s,1/0)}}
+return A.bq(s,A.iv(new A.ex(B.fa,A.cA(A.b([q,B.cm,A.c5(p,B.v,B.hm,B.A),B.eT,A.bx("\xa9 2026 Abdulla \u2022 Crafted with Flutter Web",s,s,A.bl().$4$color$fontSize$fontWeight$height(B.ac,12,B.n,1.4).kf(B.ac,12),B.cN)],o),B.v,B.A),s),s,s),B.p,s,s,B.Be,s,s,s,s,new A.aq(r,36,r,36),s,s,1/0)}}
 A.a0w.prototype={
 $0(){return A.kN("https://github.com/abdullac")},
 $S:0}
@@ -84027,8 +84027,8 @@ B.Bb=new A.aY(B.mF,null,null,null,null,null,B.bJ)
 B.iM=new A.aY(B.e,null,null,null,null,null,B.bJ)
 B.bG=new A.B6(0,"clamp")
 B.J=new A.E(0,0,0,0,B.i)
-B.Hi=s([B.N,B.J],t.t_)
-B.Gg=new A.hU(B.f6,B.iE,B.bG,B.Hi,null,null)
+B.Hj=s([B.N,B.J],t.t_)
+B.Gg=new A.hU(B.f6,B.iE,B.bG,B.Hj,null,null)
 B.w=new A.GA(0,"rectangle")
 B.iN=new A.aY(null,null,null,null,null,B.Gg,B.w)
 B.CV=new A.E(1,0.9607843137254902,0.6196078431372549,0.043137254901960784,B.i)
@@ -84260,7 +84260,7 @@ B.C6=new A.adh()
 B.ao=new A.adk()
 B.cY=new A.adm()
 B.dA=new A.MK(0,0,0,0)
-B.Ib=s([],A.ak("w<aNx>"))
+B.Ia=s([],A.ak("w<aNx>"))
 B.a0E=new A.ads()
 B.b7={}
 B.un=new A.bB(B.b7,[],t.li)
@@ -84335,7 +84335,7 @@ B.a05=new A.f_(B.k8,B.kb,B.k8)
 B.a_X=new A.f_(B.h9,B.k8,B.h9)
 B.iT=new A.QD()
 B.HS=s([B.a0c,B.a0_,B.a03,B.a05,B.a_X,B.iT],t.ka)
-B.Ho=s([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],t.n)
+B.Hp=s([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],t.n)
 B.a09=new A.uu(B.HS)
 B.LL=new A.d(6,36)
 B.LB=new A.d(5.755802622931704,35.48132577125743)
@@ -84430,8 +84430,8 @@ B.Mb=new A.d(35.31370849898476,38.14213562373095)
 B.k7=s([B.LK,B.LS,B.Oh,B.Nl,B.NM,B.Nv,B.Lr,B.Mc,B.MX,B.Ot,B.NI,B.Ou,B.Oj,B.MB,B.OA,B.LN,B.LO,B.Nn,B.Lm,B.Li,B.Mb],t.l)
 B.a_Z=new A.f_(B.k7,B.kh,B.k7)
 B.a04=new A.f_(B.ha,B.k7,B.ha)
-B.Il=s([B.a0b,B.a00,B.a_W,B.a_Z,B.a04,B.iT],t.ka)
-B.a07=new A.uu(B.Il)
+B.Ik=s([B.a0b,B.a00,B.a_W,B.a_Z,B.a04,B.iT],t.ka)
+B.a07=new A.uu(B.Ik)
 B.LH=new A.d(6,16)
 B.Lq=new A.d(6.1715484384586965,15.794477742439435)
 B.LU=new A.d(6.7847088111550455,15.101124417731686)
@@ -84527,7 +84527,7 @@ B.a_Y=new A.f_(B.ka,B.ke,B.ka)
 B.a06=new A.f_(B.hd,B.ka,B.hd)
 B.IH=s([B.a0a,B.a02,B.a01,B.a_Y,B.a06,B.iT],t.ka)
 B.a08=new A.uu(B.IH)
-B.Hl=s([B.a09,B.a07,B.a08],A.ak("w<uu>"))
+B.Hm=s([B.a09,B.a07,B.a08],A.ak("w<uu>"))
 B.C7=new A.ae4()
 B.my=new A.Nj()
 B.fe=new A.aeB()
@@ -85137,8 +85137,8 @@ B.Gl=s([255,216,255],t.Z)
 B.FF=new A.lI(2,"jpeg")
 B.FQ=new A.iK(B.FF,!1,3,"jpeg")
 B.FD=new A.k2(B.Gl,B.FQ,3,"jpeg")
-B.H5=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
-B.Fz=new A.k2(B.H5,B.o0,4,"webp")
+B.H6=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
+B.Fz=new A.k2(B.H6,B.o0,4,"webp")
 B.GZ=s([66,77],t.Z)
 B.FG=new A.lI(4,"bmp")
 B.FO=new A.iK(B.FG,!1,6,"bmp")
@@ -85148,9 +85148,9 @@ B.lY=new A.DO(0,"named")
 B.AB=new A.DO(1,"anonymous")
 B.GU=s([B.lY,B.AB],A.ak("w<DO>"))
 B.HF=s([0.41233895,0.35762064,0.18051042],t.n)
-B.Hh=s([0.2126,0.7152,0.0722],t.n)
+B.Hi=s([0.2126,0.7152,0.0722],t.n)
 B.IL=s([0.01932141,0.11916382,0.95034478],t.n)
-B.GW=s([B.HF,B.Hh,B.IL],t.zg)
+B.GW=s([B.HF,B.Hi,B.IL],t.zg)
 B.oc=s([0,4,12,1,5,13,3,7,15],t.t)
 B.a_f=new A.fr(0,1)
 B.a_k=new A.fr(0.5,1)
@@ -85163,75 +85163,52 @@ B.a_o=new A.fr(0.8875,0.25)
 B.a_m=new A.fr(0.925,0.5)
 B.a_g=new A.fr(0.9625,0.75)
 B.a_h=new A.fr(1,1)
-B.H6=s([B.a_f,B.a_k,B.a_n,B.a_p,B.a_l,B.a_j,B.a_i,B.a_o,B.a_m,B.a_g,B.a_h],A.ak("w<fr>"))
+B.H7=s([B.a_f,B.a_k,B.a_n,B.a_p,B.a_l,B.a_j,B.a_i,B.a_o,B.a_m,B.a_g,B.a_h],A.ak("w<fr>"))
 B.bZ=new A.kD(0,"left")
 B.dw=new A.kD(1,"right")
 B.cN=new A.kD(2,"center")
 B.eV=new A.kD(3,"justify")
 B.aT=new A.kD(4,"start")
 B.i5=new A.kD(5,"end")
-B.H7=s([B.bZ,B.dw,B.cN,B.eV,B.aT,B.i5],A.ak("w<kD>"))
-B.Hp=s([2,1.13276676],t.n)
+B.H8=s([B.bZ,B.dw,B.cN,B.eV,B.aT,B.i5],A.ak("w<kD>"))
+B.Hq=s([2,1.13276676],t.n)
 B.Go=s([2.18349805,1.20311921],t.n)
 B.Iq=s([2.33888662,1.28698796],t.n)
 B.It=s([2.48660575,1.36351941],t.n)
-B.Hc=s([2.62226596,1.44717976],t.n)
-B.Hj=s([2.7514899,1.53385819],t.n)
+B.Hd=s([2.62226596,1.44717976],t.n)
+B.Hk=s([2.7514899,1.53385819],t.n)
 B.HR=s([3.36298265,1.98288283],t.n)
 B.Hs=s([4.08649929,2.23811846],t.n)
 B.HI=s([4.85481134,2.47563463],t.n)
-B.Hg=s([5.62945551,2.72948597],t.n)
+B.Hh=s([5.62945551,2.72948597],t.n)
 B.Hr=s([6.43023796,2.98020421],t.n)
-B.od=s([B.Hp,B.Go,B.Iq,B.It,B.Hc,B.Hj,B.HR,B.Hs,B.HI,B.Hg,B.Hr],t.zg)
+B.od=s([B.Hq,B.Go,B.Iq,B.It,B.Hd,B.Hk,B.HR,B.Hs,B.HI,B.Hh,B.Hr],t.zg)
 B.k9=s(["About","Skills","Projects","Contact"],t.s)
 B.a_3=new A.u4("Flutter & Dart",B.h2,null)
 B.nW=new A.c_(61783,"MaterialIcons",null,!1)
 B.a_4=new A.u4("BLoC & Freezed",B.nW,null)
 B.a_5=new A.u4("Responsive UI",B.h3,null)
-B.H9=s([B.a_3,B.a_4,B.a_5],t.p)
-B.Ha=s(["Arial"],t.s)
-B.Hb=s([B.iI,B.iJ],A.ak("w<vE>"))
-B.Hd=s(["-apple-system","BlinkMacSystemFont"],t.s)
+B.Ha=s([B.a_3,B.a_4,B.a_5],t.p)
+B.Hb=s(["Arial"],t.s)
+B.Hc=s([B.iI,B.iJ],A.ak("w<vE>"))
+B.He=s(["-apple-system","BlinkMacSystemFont"],t.s)
 B.oe=s(["BlinkMacSystemFont"],t.s)
-B.Hf=s([18,15,10,12,15,18,15,12,12],t.n)
-B.Sq=new A.t7("Frontend & Framework",B.h3,0,"frontend")
-B.SD=new A.cS("Flutter","Core")
-B.SB=new A.cS("Dart","Core")
-B.Su=new A.cS("Responsive UI",null)
-B.SF=new A.cS("HTML5",null)
-B.SA=new A.cS("CSS3",null)
-B.SH=new A.cS("JavaScript",null)
-B.Sz=new A.cS("Bootstrap",null)
-B.SL=new A.cS("jQuery",null)
-B.HG=s([B.SD,B.SB,B.Su,B.SF,B.SA,B.SH,B.Sz,B.SL],t.IZ)
-B.Sn=new A.pi(B.Sq,"Cross-platform UI development for Web, Android, iOS, and Desktop.",B.HG)
-B.F5=new A.c_(62830,"MaterialIcons",null,!1)
-B.Ss=new A.t7("State Management & Architecture",B.F5,1,"architecture")
-B.Sx=new A.cS("BLoC","State")
-B.SE=new A.cS("Freezed","Immutable")
-B.SG=new A.cS("Injectable","DI")
-B.Sy=new A.cS("Clean Code",null)
-B.Hq=s([B.Sx,B.SE,B.SG,B.Sy],t.IZ)
-B.Sp=new A.pi(B.Ss,"State management, code generation, and reactive architecture.",B.Hq)
-B.Fa=new A.c_(63169,"MaterialIcons",null,!1)
-B.St=new A.t7("Backend & Database",B.Fa,2,"backend")
-B.SC=new A.cS("Dio","Networking")
-B.SK=new A.cS("JSON Serialization",null)
-B.Sw=new A.cS("REST APIs",null)
-B.SJ=new A.cS("HTTP Client",null)
-B.I1=s([B.SC,B.SK,B.Sw,B.SJ],t.IZ)
-B.Sm=new A.pi(B.St,"API communication, network requests, and data serialization.",B.I1)
-B.Fk=new A.c_(983964,"MaterialIcons",null,!1)
-B.Sr=new A.t7("Tools & Environment",B.Fk,3,"tools")
-B.SN=new A.cS("Git & GitHub",null)
-B.SI=new A.cS("Java",null)
-B.SM=new A.cS("Linux OS",null)
-B.Sv=new A.cS("Cross-Platform Build",null)
-B.I5=s([B.SN,B.SI,B.SM,B.Sv],t.IZ)
-B.So=new A.pi(B.Sr,"Version control, programming environments, and operating systems.",B.I5)
-B.of=s([B.Sn,B.Sp,B.Sm,B.So],A.ak("w<pi>"))
-B.Hk=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
-B.Hm=s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298],t.t)
+B.Hg=s([18,15,10,12,15,18,15,12,12],t.n)
+B.Fj=new A.c_(983662,"MaterialIcons",null,!1)
+B.Qf=new A.l3(["Striving to deliver every project with precision, clean code, and exceptional quality.",B.Fj,"Quality","Aim for Excellence"])
+B.Fi=new A.c_(983605,"MaterialIcons",null,!1)
+B.Qj=new A.l3(["Taking full ownership of project deliverables with deep commitment and meticulous attention to detail.",B.Fi,"Commitment","Ownership & Dedication"])
+B.Fg=new A.c_(983375,"MaterialIcons",null,!1)
+B.Qk=new A.l3(["Maintaining a humble, friendly, and respectful approach in teamwork and communication.",B.Fg,"Teamwork","Collaborative Spirit"])
+B.Fc=new A.c_(63573,"MaterialIcons",null,!1)
+B.Qg=new A.l3(["Approaching challenging technical problems with curiosity, optimism, and persistent problem-solving.",B.Fc,"Mindset","Solution-Oriented Mindset"])
+B.Fh=new A.c_(983403,"MaterialIcons",null,!1)
+B.Qi=new A.l3(["Staying calm, composed, and productive under pressure to consistently achieve project milestones.",B.Fh,"Resilience","Resilience Under Pressure"])
+B.F6=new A.c_(62876,"MaterialIcons",null,!1)
+B.Qh=new A.l3(["Continuously mastering modern technologies and best practices to build better digital experiences.",B.F6,"Growth","Continuous Growth"])
+B.of=s([B.Qf,B.Qj,B.Qk,B.Qg,B.Qi,B.Qh],A.ak("w<+description,icon,tag,title(D,c_,D,D)>"))
+B.Hl=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
+B.Hn=s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298],t.t)
 B.IR=new A.ka("en",null,"US")
 B.og=s([B.IR],t.ss)
 B.oh=s([0,41,61,101,131,181,251,301,360],t.n)
@@ -85255,15 +85232,6 @@ B.mP=new A.E(0.09803921568627451,0,0,0,B.i)
 B.h=new A.d(0,0)
 B.Bh=new A.bn(0.2,B.AT,B.mP,B.h,11)
 B.HE=s([B.Bh],t.V)
-B.Hz=s(["Flutter Web","Flutter Mobile","BLoC","Freezed","Dio","REST API"],t.s)
-B.PM=new A.oS("Netflipz (Netflix Clone)","Responsive Netflix Clone built with Flutter Web and Mobile featuring animated transparent App Bar, 3-tier visibility Bottom Navigation Bar, custom image cards, search views, fast laughs, and coming soon items.",B.Hz,"https://abdullac.github.io/-NetClpix-NetFlix-Clone-Web-Flutter/","https://github.com/abdullac/-NetClpix-NetFlix-Clone-Web-Flutter","assets/projects/netflipzhome.webp","Featured in /#/")
-B.Ir=s(["Flutter Web","Dart","Responsive UI","State Management"],t.s)
-B.PL=new A.oS("Cafe Menu & Ordering App","Interactive restaurant and cafe menu application built with Flutter Web and Mobile, allowing customers to browse digital menus, categories, and item details with responsive UI.",B.Ir,"https://abdullac.github.io/cafe-menu-flutter-web-app/","https://github.com/abdullac/cafe-menu-flutter-web-app",null,"Live Web App")
-B.Im=s(["Flutter Web","Dart","Video Integration","Responsive UI"],t.s)
-B.PK=new A.oS("DevTube (YouTube Web App)","Video streaming web application inspired by YouTube built with Flutter Web, featuring responsive layout, video card grids, and channel navigation.",B.Im,"https://abdullac.github.io/devtube-flutter-web-app/","https://github.com/abdullac/devtube-flutter-web-app",null,"Live Web App")
-B.Ip=s(["Flutter Web","Dart","Google Sheets API","Form Validation"],t.s)
-B.PJ=new A.oS("Customer Feedback System","Cross-platform feedback collection application developed with Flutter for capturing customer ratings, reviews, and satisfaction metrics seamlessly.",B.Ip,"https://abdullac.github.io/costomer-feedback-system/","https://github.com/abdullac/costomer-feedback-system",null,"Live Web App")
-B.ol=s([B.PM,B.PL,B.PK,B.PJ],A.ak("w<oS>"))
 B.zO=new A.Az(0,"left")
 B.zP=new A.Az(1,"right")
 B.HH=s([B.zO,B.zP],A.ak("w<Az>"))
@@ -85287,6 +85255,15 @@ B.Ak=new A.u_(2,"bottomLeft")
 B.ZU=new A.kX(B.Aj,B.Ak)
 B.ZV=new A.kX(B.Ak,B.Aj)
 B.HW=s([B.ZT,B.ZW,B.ZU,B.ZV],A.ak("w<kX>"))
+B.Hz=s(["Flutter Web","Flutter Mobile","BLoC","Freezed","Dio","REST API"],t.s)
+B.PK=new A.oS("Netflipz (Netflix Clone)","A responsive Netflix clone engineered with Flutter Web & Mobile, featuring an animated transparent app bar, dynamic bottom navigation, search filters, Fast Laughs reels, and coming-soon previews.",B.Hz,"https://abdullac.github.io/-NetClpix-NetFlix-Clone-Web-Flutter/","https://github.com/abdullac/-NetClpix-NetFlix-Clone-Web-Flutter","assets/projects/netflipzhome.webp","Featured Project")
+B.Ir=s(["Flutter Web","Dart","Responsive UI","State Management"],t.s)
+B.PL=new A.oS("Cafe Menu & Ordering App","An interactive digital menu application developed with Flutter Web & Mobile, enabling seamless food category browsing, rich item previews, and an intuitive ordering interface.",B.Ir,"https://abdullac.github.io/cafe-menu-flutter-web-app/","https://github.com/abdullac/cafe-menu-flutter-web-app",null,"Live Web App")
+B.Il=s(["Flutter Web","Dart","Video Integration","Responsive UI"],t.s)
+B.PJ=new A.oS("DevTube (YouTube Web App)","A video streaming web application inspired by YouTube, engineered with Flutter Web featuring responsive video feeds, custom media cards, and channel navigation.",B.Il,"https://abdullac.github.io/devtube-flutter-web-app/","https://github.com/abdullac/devtube-flutter-web-app",null,"Live Web App")
+B.Ip=s(["Flutter Web","Dart","Google Sheets API","Form Validation"],t.s)
+B.PM=new A.oS("Customer Feedback System","A cross-platform feedback management application built with Flutter to capture customer ratings, reviews, and satisfaction analytics in real time.",B.Ip,"https://abdullac.github.io/costomer-feedback-system/","https://github.com/abdullac/costomer-feedback-system",null,"Live Web App")
+B.ol=s([B.PK,B.PL,B.PJ,B.PM],A.ak("w<oS>"))
 B.HY=s([35,30,20,25,30,35,30,25,25],t.n)
 B.Uv=new A.l(!0,B.e,null,null,null,null,null,B.ah,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.TV=new A.e_(" .dev",null,null,B.aw,null,null,null,null,null,null,B.Uv)
@@ -85296,33 +85273,33 @@ B.Bo=new A.qd()
 B.hI=new A.La(1,"page")
 B.hJ=new A.e7(B.aW,B.hI)
 B.I3=s([B.Bo,B.hJ],A.ak("w<aR>"))
-B.Id=s([],t.QP)
+B.Ic=s([],t.QP)
 B.on=s([],A.ak("w<aNf>"))
-B.Ie=s([],t.D)
-B.Ij=s([],t.fJ)
-B.Ig=s([],t.ER)
-B.I8=s([],t.tc)
+B.Id=s([],t.D)
+B.Ii=s([],t.fJ)
+B.If=s([],t.ER)
+B.I7=s([],t.tc)
 B.hb=s([],t.jl)
-B.Ia=s([],t.wi)
-B.I9=s([],A.ak("w<av4<@>>"))
+B.I9=s([],t.wi)
+B.I8=s([],A.ak("w<av4<@>>"))
 B.kg=s([],t.AO)
-B.Ic=s([],t.D1)
+B.Ib=s([],t.D1)
 B.hc=s([],t.QF)
-B.If=s([],t.Lx)
-B.Ik=s([],t.AS)
+B.Ie=s([],t.Lx)
+B.Ij=s([],t.AS)
 B.a0O=s([],t.p)
-B.Ii=s([],t.n)
-B.I7=s([],t.t)
+B.Ih=s([],t.n)
+B.I6=s([],t.t)
 B.om=s([],t.ee)
-B.Ih=s([],t.XS)
+B.Ig=s([],t.XS)
 B.uA=new A.d(0,2)
 B.Bg=new A.bn(0.75,B.R,B.mP,B.uA,1.5)
 B.Iu=s([B.Bg],t.V)
 B.ej=s([B.cp,B.bI,B.f7,B.f8,B.iH],t.QP)
 B.H0=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
 B.I4=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
-B.He=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.IE=s([B.H0,B.I4,B.He],t.zg)
+B.Hf=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
+B.IE=s([B.H0,B.I4,B.Hf],t.zg)
 B.IF=s([45,95,45,20,45,90,45,45,45],t.n)
 B.IG=s([120,120,20,45,20,15,20,120,120],t.n)
 B.a0u=new A.q_("Web & Mobile",B.h3,null)
@@ -85342,20 +85319,43 @@ B.kE=new A.fS(7,"functionModifier")
 B.uv=new A.fS(8,"symbolModifier")
 B.oo=s([B.de,B.df,B.dg,B.dh,B.kB,B.kC,B.kD,B.kE,B.uv],A.ak("w<fS>"))
 B.ki=s([!0,!1],t.HZ)
+B.Sq=new A.t7("Frontend & Framework",B.h3,0,"frontend")
+B.SC=new A.cS("Flutter","Core")
+B.SA=new A.cS("Dart","Core")
+B.Su=new A.cS("Responsive UI",null)
+B.SE=new A.cS("HTML5",null)
+B.Sz=new A.cS("CSS3",null)
+B.SG=new A.cS("JavaScript",null)
+B.Sy=new A.cS("Bootstrap",null)
+B.SK=new A.cS("jQuery",null)
+B.HG=s([B.SC,B.SA,B.Su,B.SE,B.Sz,B.SG,B.Sy,B.SK],t.IZ)
+B.Sp=new A.pi(B.Sq,"Cross-platform UI development for Web, Android, iOS, and Desktop.",B.HG)
+B.F5=new A.c_(62830,"MaterialIcons",null,!1)
+B.Ss=new A.t7("State Management & Architecture",B.F5,1,"architecture")
+B.Sx=new A.cS("BLoC","State")
+B.SD=new A.cS("Freezed","Immutable")
+B.SF=new A.cS("Injectable","DI")
+B.SH=new A.cS("Clean Architecture","Pattern")
+B.H5=s([B.Sx,B.SD,B.SF,B.SH],t.IZ)
+B.Sn=new A.pi(B.Ss,"State management, code generation, and reactive architecture.",B.H5)
+B.Fa=new A.c_(63169,"MaterialIcons",null,!1)
+B.St=new A.t7("Backend & Database",B.Fa,2,"backend")
+B.SB=new A.cS("Dio","Networking")
+B.SJ=new A.cS("JSON Serialization",null)
+B.Sw=new A.cS("REST APIs",null)
+B.SI=new A.cS("HTTP Client",null)
+B.I1=s([B.SB,B.SJ,B.Sw,B.SI],t.IZ)
+B.Sm=new A.pi(B.St,"API communication, network requests, and data serialization.",B.I1)
+B.Fk=new A.c_(983964,"MaterialIcons",null,!1)
+B.Sr=new A.t7("Tools & Environment",B.Fk,3,"tools")
+B.SN=new A.cS("Git & GitHub",null)
+B.SM=new A.cS("Android Studio / VS Code",null)
+B.SL=new A.cS("Linux OS",null)
+B.Sv=new A.cS("Cross-Platform Build",null)
+B.Im=s([B.SN,B.SM,B.SL,B.Sv],t.IZ)
+B.So=new A.pi(B.Sr,"Version control, programming environments, and operating systems.",B.Im)
+B.op=s([B.Sp,B.Sn,B.Sm,B.So],A.ak("w<pi>"))
 B.IM=s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"],t.s)
-B.Fj=new A.c_(983662,"MaterialIcons",null,!1)
-B.Qj=new A.l3(["Aim to make every work complete with perfection and clean execution.",B.Fj,"Quality","Aim for Perfection"])
-B.Fi=new A.c_(983605,"MaterialIcons",null,!1)
-B.Qg=new A.l3(["Working longer hours with high responsibility and attention to detail.",B.Fi,"Commitment","High Responsibility"])
-B.Fg=new A.c_(983375,"MaterialIcons",null,!1)
-B.Qk=new A.l3(["Friendly, humble, and positive attitude towards everyone and team members.",B.Fg,"Teamwork","Friendly Attitude"])
-B.Fc=new A.c_(63573,"MaterialIcons",null,!1)
-B.Qh=new A.l3(["Tackling complex development tasks and problems with a positive attitude.",B.Fc,"Mindset","Positive Mindset"])
-B.Fh=new A.c_(983403,"MaterialIcons",null,!1)
-B.Qf=new A.l3(["Ready to work calmly under pressure and meet project milestones.",B.Fh,"Resilience","Resilient Under Pressure"])
-B.F6=new A.c_(62876,"MaterialIcons",null,!1)
-B.Qi=new A.l3(["Always learning new things, technologies, and incorporating them into projects.",B.F6,"Growth","Continuous Learning"])
-B.op=s([B.Qj,B.Qg,B.Qk,B.Qh,B.Qf,B.Qi],A.ak("w<+description,icon,tag,title(D,c_,D,D)>"))
 B.IO=s([B.fW,B.fX,B.fY,B.n,B.x,B.ah,B.a_,B.bQ,B.fZ],A.ak("w<ej>"))
 B.IP=s([0.015176349177441876,0.045529047532325624,0.07588174588720938,0.10623444424209313,0.13658714259697685,0.16693984095186062,0.19729253930674434,0.2276452376616281,0.2579979360165119,0.28835063437139563,0.3188300904430532,0.350925934958123,0.3848314933096426,0.42057480301049466,0.458183274052838,0.4976837250274023,0.5391024159806381,0.5824650784040898,0.6277969426914107,0.6751227633498623,0.7244668422128921,0.775853049866786,0.829304845476233,0.8848452951698498,0.942497089126609,1.0022825574869039,1.0642236851973577,1.1283421258858297,1.1946592148522128,1.2631959812511864,1.3339731595349034,1.407011200216447,1.4823302800086415,1.5599503113873272,1.6398909516233677,1.7221716113234105,1.8068114625156377,1.8938294463134073,1.9832442801866852,2.075074464868551,2.1693382909216234,2.2660538449872063,2.36523901573795,2.4669114995532007,2.5710888059345764,2.6777882626779785,2.7870270208169257,2.898822059350997,3.0131901897720907,3.1301480604002863,3.2497121605402226,3.3718988244681087,3.4967242352587946,3.624204428461639,3.754355295633311,3.887192587735158,4.022731918402185,4.160988767090289,4.301978482107941,4.445716283538092,4.592217266055746,4.741496401646282,4.893568542229298,5.048448422192488,5.20615066083972,5.3666897647573375,5.5300801301023865,5.696336044816294,5.865471690767354,6.037501145825082,6.212438385869475,6.390297286737924,6.571091626112461,6.7548350853498045,6.941541251256611,7.131223617812143,7.323895587840543,7.5195704746346665,7.7182615035334345,7.919981813454504,8.124744458384042,8.332562408825165,8.543448553206703,8.757415699253682,8.974476575321063,9.194643831691977,9.417930041841839,9.644347703669503,9.873909240696694,10.106627003236781,10.342513269534024,10.58158024687427,10.8238400726681,11.069304815507364,11.317986476196008,11.569896988756009,11.825048221409341,12.083451977536606,12.345119996613247,12.610063955123938,12.878295467455942,13.149826086772048,13.42466730586372,13.702830557985108,13.984327217668513,14.269168601521828,14.55736596900856,14.848930523210871,15.143873411576273,15.44220572664832,15.743938506781891,16.04908273684337,16.35764934889634,16.66964922287304,16.985093187232053,17.30399201960269,17.62635644741625,17.95219714852476,18.281524751807332,18.614349837764564,18.95068293910138,19.290534541298456,19.633915083172692,19.98083495742689,20.331304511189067,20.685334046541502,21.042933821039977,21.404114048223256,21.76888489811322,22.137256497705877,22.50923893145328,22.884842241736916,23.264076429332462,23.6469514538663,24.033477234264016,24.42366364919083,24.817520537484558,25.21505769858089,25.61628489293138,26.021211842414342,26.429848230738664,26.842203703840827,27.258287870275353,27.678110301598522,28.10168053274597,28.529008062403893,28.96010235337422,29.39497283293396,29.83362889318845,30.276079891419332,30.722335150426627,31.172403958865512,31.62629557157785,32.08401920991837,32.54558406207592,33.010999283389665,33.4802739966603,33.953417292456834,34.430438229418264,34.911345834551085,35.39614910352207,35.88485700094671,36.37747846067349,36.87402238606382,37.37449765026789,37.87891309649659,38.38727753828926,38.89959975977785,39.41588851594697,39.93615253289054,40.460400508064545,40.98864111053629,41.520882981230194,42.05713473317016,42.597404951718396,43.141702194811224,43.6900349931913,44.24241185063697,44.798841244188324,45.35933162437017,45.92389141541209,46.49252901546552,47.065252796817916,47.64207110610409,48.22299226451468,48.808024568002054,49.3971762874833,49.9904556690408,50.587870934119984,51.189430279724725,51.79514187861014,52.40501387947288,53.0190544071392,53.637271562750364,54.259673423945976,54.88626804504493,55.517063457223934,56.15206766869424,56.79128866487574,57.43473440856916,58.08241284012621,58.734331877617365,59.39049941699807,60.05092333227251,60.715611475655585,61.38457167773311,62.057811747619894,62.7353394731159,63.417162620860914,64.10328893648692,64.79372614476921,65.48848194977529,66.18756403501224,66.89098006357258,67.59873767827808,68.31084450182222,69.02730813691093,69.74813616640164,70.47333615344107,71.20291564160104,71.93688215501312,72.67524319850172,73.41800625771542,74.16517879925733,74.9167682708136,75.67278210128072,76.43322770089146,77.1981124613393,77.96744375590167,78.74122893956174,79.51947534912904,80.30219030335869,81.08938110306934,81.88105503125999,82.67721935322541,83.4778813166706,84.28304815182372,85.09272707154808,85.90692527145302,86.72564993000343,87.54890820862819,88.3767072518277,89.2090541872801,90.04595612594655,90.88742016217518,91.73345337380438,92.58406282226491,93.43925555268066,94.29903859396902,95.16341895893969,96.03240364439274,96.9059996312159,97.78421388448044,98.6670533535366,99.55452497210776],t.n)
 B.Q3=new A.a9(0.7078,8.3194)
@@ -85930,7 +85930,7 @@ B.HN=s([8589934850,8589934850,8589934851,null],t.Z)
 B.uq=new A.dq(["*",B.GC,"+",B.GD,"-",B.GE,".",B.GF,"/",B.GG,"0",B.GH,"1",B.GI,"2",B.GK,"3",B.GM,"4",B.GN,"5",B.GO,"6",B.GP,"7",B.GQ,"8",B.GR,"9",B.GT,"Alt",B.HK,"AltGraph",B.Gr,"ArrowDown",B.Gs,"ArrowLeft",B.Gt,"ArrowRight",B.Gu,"ArrowUp",B.Gv,"Clear",B.GA,"Control",B.HL,"Delete",B.Gq,"End",B.Gw,"Enter",B.Gp,"Home",B.Gx,"Insert",B.GB,"Meta",B.HM,"PageDown",B.Gy,"PageUp",B.Gz,"Shift",B.HN],A.ak("dq<D,S<p?>>"))
 B.GS=s([B.ox,null,null,B.ud],t.L)
 B.In=s([B.u_,null,null,B.ue],t.L)
-B.Hn=s([B.u0,null,null,B.uf],t.L)
+B.Ho=s([B.u0,null,null,B.uf],t.L)
 B.HQ=s([B.u1,null,null,B.cD],t.L)
 B.Gi=s([B.u2,null,null,B.ug],t.L)
 B.IC=s([B.u3,null,null,B.ku],t.L)
@@ -85940,7 +85940,7 @@ B.IK=s([B.u6,null,null,B.eu],t.L)
 B.Ix=s([B.u7,null,null,B.cF],t.L)
 B.GY=s([B.u8,null,null,B.kv],t.L)
 B.Gm=s([B.u9,null,null,B.cG],t.L)
-B.H8=s([B.ua,null,null,B.ev],t.L)
+B.H9=s([B.ua,null,null,B.ev],t.L)
 B.Io=s([B.ub,null,null,B.cH],t.L)
 B.Is=s([B.uc,null,null,B.ew],t.L)
 B.H1=s([B.er,B.er,B.hk,null],t.L)
@@ -85958,9 +85958,9 @@ B.Hx=s([B.cB,null,null,B.ev],t.L)
 B.Iw=s([B.ep,null,null,B.ku],t.L)
 B.H3=s([B.es,B.es,B.hl,null],t.L)
 B.Hy=s([B.en,null,null,B.eu],t.L)
-B.I6=s([B.eo,null,null,B.ew],t.L)
+B.I5=s([B.eo,null,null,B.ew],t.L)
 B.H4=s([B.cj,B.cj,B.cC,null],t.L)
-B.Kw=new A.dq(["*",B.GS,"+",B.In,"-",B.Hn,".",B.HQ,"/",B.Gi,"0",B.IC,"1",B.Iy,"2",B.H_,"3",B.IK,"4",B.Ix,"5",B.GY,"6",B.Gm,"7",B.H8,"8",B.Io,"9",B.Is,"Alt",B.H1,"AltGraph",B.ID,"ArrowDown",B.Ht,"ArrowLeft",B.Hu,"ArrowRight",B.Hv,"ArrowUp",B.II,"Clear",B.Iv,"Control",B.H2,"Delete",B.I_,"End",B.Hw,"Enter",B.GX,"Home",B.Hx,"Insert",B.Iw,"Meta",B.H3,"PageDown",B.Hy,"PageUp",B.I6,"Shift",B.H4],A.ak("dq<D,S<f?>>"))
+B.Kw=new A.dq(["*",B.GS,"+",B.In,"-",B.Ho,".",B.HQ,"/",B.Gi,"0",B.IC,"1",B.Iy,"2",B.H_,"3",B.IK,"4",B.Ix,"5",B.GY,"6",B.Gm,"7",B.H9,"8",B.Io,"9",B.Is,"Alt",B.H1,"AltGraph",B.ID,"ArrowDown",B.Ht,"ArrowLeft",B.Hu,"ArrowRight",B.Hv,"ArrowUp",B.II,"Clear",B.Iv,"Control",B.H2,"Delete",B.I_,"End",B.Hw,"Enter",B.GX,"Home",B.Hx,"Insert",B.Iw,"Meta",B.H3,"PageDown",B.Hy,"PageUp",B.I5,"Shift",B.H4],A.ak("dq<D,S<f?>>"))
 B.L1={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.ur=new A.bB(B.L1,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.L0={"zh-Hant":0,"zh-TW":1,"zh-MO":2,"zh-HK":3,ja:4,ko:5,zh:6,"zh-Hans":7,"zh-CN":8}
@@ -86643,8 +86643,8 @@ B.zG=new A.cd(null,40,null,null)
 B.Sk=new A.cd(null,88,null,null)
 B.Sl=new A.cd(null,8,null,null)
 B.SO=new A.Al(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.SP=new A.Am(2,20,20,1,275)
-B.SQ=new A.Am(2,24,24,0.76,null)
+B.SP=new A.Am(2,24,24,0.76,null)
+B.SQ=new A.Am(2,20,20,1,300)
 B.SR=new A.abt(0,"firstIsTop")
 B.SS=new A.abu(1,"enabled")
 B.ST=new A.abv(1,"enabled")
