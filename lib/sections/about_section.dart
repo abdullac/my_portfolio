@@ -178,7 +178,7 @@ class AboutSection extends StatelessWidget {
         ),
         const SizedBox(height: 18),
         Text(
-          'One day, I was using an application on a computer and realized that this is the result of people working to create solutions. I was inspired to build software that runs seamlessly on computers and devices.',
+          'My journey into software engineering began with a genuine curiosity about how digital tools empower people to solve everyday challenges. Inspired by the impact of well-crafted technology, I set out to build software that performs seamlessly across devices.',
           style: AppTypography.bodyLarge.copyWith(
             height: 1.65,
             fontSize: isMobile ? 14 : 16,
@@ -186,7 +186,7 @@ class AboutSection extends StatelessWidget {
         ),
         const SizedBox(height: 12),
         Text(
-          'Today, I develop cross-platform applications for Web, Android, Linux, Windows, iOS, and macOS using Flutter and Dart. I have built multiple responsive applications tailored for Mobile, Tablet, and Desktop screens, continually learning new technologies to build practical, user-centric software.',
+          'Today, I develop responsive cross-platform applications for Web, Android, iOS, Windows, Linux, and macOS using Flutter & Dart. I focus on clean code, intuitive user experiences, and robust state management, constantly expanding my skills to build practical, impactful software.',
           style: AppTypography.bodyLarge.copyWith(
             height: 1.65,
             fontSize: isMobile ? 14 : 16,
@@ -218,39 +218,39 @@ class AboutSection extends StatelessWidget {
     final ethics = const [
       (
         icon: Icons.verified_rounded,
-        title: 'Aim for Perfection',
+        title: 'Aim for Excellence',
         tag: 'Quality',
-        description: 'Aim to make every work complete with perfection and clean execution.',
+        description: 'Striving to deliver every project with precision, clean code, and exceptional quality.',
       ),
       (
         icon: Icons.timelapse_rounded,
-        title: 'High Responsibility',
+        title: 'Ownership & Dedication',
         tag: 'Commitment',
-        description: 'Working longer hours with high responsibility and attention to detail.',
+        description: 'Taking full ownership of project deliverables with deep commitment and meticulous attention to detail.',
       ),
       (
         icon: Icons.sentiment_satisfied_alt_rounded,
-        title: 'Friendly Attitude',
+        title: 'Collaborative Spirit',
         tag: 'Teamwork',
-        description: 'Friendly, humble, and positive attitude towards everyone and team members.',
+        description: 'Maintaining a humble, friendly, and respectful approach in teamwork and communication.',
       ),
       (
         icon: Icons.lightbulb_rounded,
-        title: 'Positive Mindset',
+        title: 'Solution-Oriented Mindset',
         tag: 'Mindset',
-        description: 'Tackling complex development tasks and problems with a positive attitude.',
+        description: 'Approaching challenging technical problems with curiosity, optimism, and persistent problem-solving.',
       ),
       (
         icon: Icons.shield_rounded,
-        title: 'Resilient Under Pressure',
+        title: 'Resilience Under Pressure',
         tag: 'Resilience',
-        description: 'Ready to work calmly under pressure and meet project milestones.',
+        description: 'Staying calm, composed, and productive under pressure to consistently achieve project milestones.',
       ),
       (
         icon: Icons.auto_stories_rounded,
-        title: 'Continuous Learning',
+        title: 'Continuous Growth',
         tag: 'Growth',
-        description: 'Always learning new things, technologies, and incorporating them into projects.',
+        description: 'Continuously mastering modern technologies and best practices to build better digital experiences.',
       ),
     ];
 

@@ -74,7 +74,7 @@ class Footer extends StatelessWidget {
 
               // Clean Copyright Line
               Text(
-                'Created by ${AppConstants.developerName} • All rights reserved',
+                '© 2026 ${AppConstants.developerName} • Crafted with Flutter Web',
                 style: AppTypography.bodySmall.copyWith(
                   color: AppColors.textMuted,
                   fontSize: 12,

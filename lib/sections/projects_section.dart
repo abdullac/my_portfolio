@@ -18,7 +18,7 @@ class ProjectsSection extends StatelessWidget {
     return SectionContainer(
       sectionKey: sectionKey,
       sectionNumber: '03. //',
-      title: 'Featured Projects & My Works',
+      title: 'Featured Projects',
       subtitle:
           'Real-world applications built and deployed with Flutter across Web and Mobile platforms.',
       child: isDesktop

@@ -7,7 +7,7 @@ class AppConstants {
   static const String developerRole = 'Flutter Developer';
   static const String developerWelcome = 'Yes, Your Own';
   static const String developerTagline =
-      'Developer for Web, Android, Linux, Windows, iOS, and macOS applications with responsive design for Mobile, Tablet, and Desktop using Flutter & Dart.';
+      'Passionate Flutter & Dart developer crafting seamless, responsive cross-platform experiences for Web, Mobile (Android & iOS), and Desktop.';
 
   // External Profiles & Contact (from abdullac.github.io/#/)
   static const String githubUrl = 'https://github.com/abdullac';

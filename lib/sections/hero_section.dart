@@ -149,7 +149,7 @@ class HeroSection extends StatelessWidget {
           const SizedBox(width: 10),
           Flexible(
             child: Text(
-              'Available for projects / Flutter Developer',
+              'Available for Projects & Opportunities',
               style: AppTypography.bodySmall.copyWith(
                 color: AppColors.textPrimary,
                 fontWeight: FontWeight.w600,

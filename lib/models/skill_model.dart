@@ -58,7 +58,7 @@ class SkillCategoryGroup {
         SkillItem(name: 'BLoC', badge: 'State'),
         SkillItem(name: 'Freezed', badge: 'Immutable'),
         SkillItem(name: 'Injectable', badge: 'DI'),
-        SkillItem(name: 'Clean Code'),
+        SkillItem(name: 'Clean Architecture', badge: 'Pattern'),
       ],
     ),
     SkillCategoryGroup(
@@ -76,7 +76,7 @@ class SkillCategoryGroup {
       description: 'Version control, programming environments, and operating systems.',
       skills: [
         SkillItem(name: 'Git & GitHub'),
-        SkillItem(name: 'Java'),
+        SkillItem(name: 'Android Studio / VS Code'),
         SkillItem(name: 'Linux OS'),
         SkillItem(name: 'Cross-Platform Build'),
       ],

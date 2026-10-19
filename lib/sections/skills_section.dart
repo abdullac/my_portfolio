@@ -30,7 +30,7 @@ class SkillsSection extends StatelessWidget {
                 crossAxisCount: 2,
                 crossAxisSpacing: 20,
                 mainAxisSpacing: 20,
-                mainAxisExtent: 275,
+                mainAxisExtent: 300,
               ),
               itemCount: SkillCategoryGroup.groups.length,
               itemBuilder: (context, index) {
